@@ -1,0 +1,24 @@
+{
+  "name": "vanilla-project",
+  "version": "1.0.0",
+  "description": "멋쟁이 사자처럼 바닐라 프로젝트",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx live-server client --host=localhost --port=3000 --no-browser "
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "시맨틱 마크업",
+    "웹표준",
+    "함수형 프로그래밍"
+  ],
+  "author": "LAB12",
+  "license": "ISC"
+}
