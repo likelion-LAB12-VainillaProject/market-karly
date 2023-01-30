@@ -17,6 +17,7 @@ module.exports = {
   parserOptions: {
       ecmaVersion: 'latest'g
   },
+  
   // extends 옵션으로 지정한 룰셋을 덮어씌운다
   rules: {
     // var는 사용할 수 없다
