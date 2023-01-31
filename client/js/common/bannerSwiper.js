@@ -25,13 +25,12 @@ const data = [
 const swiper = new Swiper('.swiper',{
   autoplay:true,
   loop:true,
-  speed: 2000,
+  speed: 200,
   parallax:true,
   pagination:{
     el:'.pagination',
+    type:'fraction',
     clickable:true,
-    bulletClass:'bullet',
-    bulletActiveClass:'is-active',
     renderBullet: function (index,className){
       return /* html */ `
         <span class="${className}">
