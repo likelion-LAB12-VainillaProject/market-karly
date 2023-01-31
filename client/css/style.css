@@ -20,7 +20,62 @@
 .banner {
   height: 370px;
   background: Gold;
+  margin : 0 auto;
+  /* max-height: 90vh; */
+  max-width: 1920px;
+  min-width: 1050px;
+  position: relative;
+  margin-bottom: 1rem;
 }
+
+.swiper-wrapper{
+  /* max-width: display-viewport; */
+  /* max-width: 1000vh; */
+  height:90%;
+    /* 색보려고 줄임 */
+
+  background-color: salmon;
+}
+
+.banner .swiper-slide{
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  overflow: hidden;
+}
+
+.banner .swiper-slide img{
+  /* width: 100%; */
+  height:90%;
+  /* 색보려고 줄임, 오버플로우를 허용하고 max */
+}
+
+.bullet{
+  display:inline-block;
+  width: 100px;
+  height: 50px;
+  background: red;
+  margin:0.3rem;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition:all .3s;
+}
+
+
+.bullet.is-active{
+  border: 4px solid brown;
+  transform:translate(-5px,-5px);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.466);
+}
+
+.bullet img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
 
 /* 메인 */
 .main {
