@@ -1,3 +1,8 @@
+@import url("./reset.css");
+@import url("./nomalize.css");
+@import url("./base.css");
+@import url("./a11y.css");
+
 /* 공통 */
 .common {
   width: 1050px;
@@ -19,19 +24,18 @@
 /* 베너 */
 .swiper {
   height: 370px;
-  background: Gold;
+  /* background: Gold; */
   margin : 0 auto;
   /* max-height: 90vh; */
   max-width: 1920px;
   min-width: 1050px;
   position: relative;
   margin-bottom: 1rem;
+  background-color: pink;
 }
 
 .swiper-wrapper{
-  /* max-width: display-viewport; */
-  /* max-width: 1000vh; */
-  height:90%;
+  height:100%;
     /* 색보려고 줄임 */
 
   background-color: salmon;
@@ -39,8 +43,8 @@
 
 .swiper .swiper-slide{
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -50,31 +54,13 @@
   /* 색보려고 줄임, 오버플로우를 허용하고 max */
 }
 
-.bullet{
-  display:inline-block;
-  width: 100px;
-  height: 50px;
-  background: red;
-  margin:0.3rem;
-  cursor: pointer;
-  border: 4px solid transparent;
-  transition:all .3s;
+.swiper-buttton-next{
+  background:url(/) no-repeat;
+  background-size: 50% auto;
+  background-position: center;
 }
 
-
-.bullet.is-active{
-  border: 4px solid brown;
-  transform:translate(-5px,-5px);
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.466);
-}
-
-.bullet img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
+/* https://jineecode.tistory.com/77 swiper button
 
 
 /* 메인 */
