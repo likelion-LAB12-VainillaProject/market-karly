@@ -1,3 +1,10 @@
+@import url(./nomalize.css);
+@import url(./reset.css);
+@import url(./a11y.css);
+@import url(./base.css);
+@import url(./root.css);
+
+
 /* 공통 */
 .common {
   width: 1050px;
@@ -10,6 +17,19 @@
   background: Pink;
 }
 
+.header--main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header--member {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 /* 네비게이션 */
 .navigation {
   background: DeepSkyBlue;

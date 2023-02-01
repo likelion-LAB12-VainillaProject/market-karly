@@ -11,18 +11,71 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.js" type="module"></script>
-    <title>Document</title>
+    <title>마켓칼리</title>
   </head>
-
   <body>
-    <header class="header common">헤더</header>
+    <main class="main">
+      <header class="header">
+        <div class="header--main">
+          <h1 class="a11yHidden">마켓컬리</h1>
+          <div class="header-main-link-list">
+            <a href="/">
+              <img
+                src="./assets/headericons/logo.svg"
+                alt="마켓칼리 로고"
+                class="header--main-logo"
+              />
+            </a>
+            <a href="/" class="is-active">마켓칼리</a>
+            <a href="/">뷰티칼리</a>
+            <img
+              src="./assets/headericons/new.svg"
+              alt="new 아이콘"
+              class="new-badge"
+            />
+          </div>
+          <div>
+            <input
+              type="search"
+              class="header--main-search"
+              placeholder="검색어를 입력해주세요"
+            />
+            <img
+              class="header--main-search-icon"
+              src="./assets/headericons/search.svg"
+              alt="검색하기"
+            />
+          </div>
+          <div class="header--main-icons">
+            <a href="/"
+              ><img
+                src="./assets/headericons/location.svg"
+                alt="지역 로고"
+            /></a>
 
-    <nav class="navigation common">네비게이션</nav>
+            <a href="/"
+              ><img src="./assets/headericons/heart.svg" alt="찜하기"
+            /></a>
 
-    <section class="banner common">베너</section>
+            <a href="/"
+              ><img src="./assets/headericons/cart.svg" alt="장바구니"
+            /></a>
+          </div>
+        </div>
 
-    <main class="main common">메인</main>
-
-    <footer class="footer common">푸터</footer>
+        <ul class="header--member">
+          <li><a href="/" class="is-active">회원가입</a></li>
+          <li><a href="/">로그인</a></li>
+          <li>
+            <a href="/"
+              >고객센터
+              <img
+                src="./assets/headericons/down.svg"
+                alt="드롭다운 아이콘"
+            /></a>
+          </li>
+        </ul>
+      </header>
+    </main>
   </body>
 </html>
