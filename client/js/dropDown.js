@@ -1,27 +1,22 @@
-import { getNode, css } from "./../lib/index.js";
+import {
+  getNode,
+  bindEvent,
+  css,
+  visibleElement,
+  invisibleElement,
+} from "./../lib/index.js";
 
-// ? 좀더 간단히 코드를 바꾸고 싶은데 이부분을 어떤 식으로 바꾸면 좋을지 해결하지 못했습니다.
+const dropDown = getNode(".nav-menu__list");
+const dropDownItem = getNode(".nav-sub-menu ");
 
-function handleDropDown() {
-  const dropDown = getNode(".nav-menu__item");
-  const handlerOnDropDown = () => {
-    css(".nav-sub-menu", "display", "block");
+const handler = (() => {
+  let isEnter = false;
+
+  return () => {
+    !isEnter ? visibleElement(dropDownItem) : invisibleElement(dropDownItem);
+    isEnter = !isEnter;
   };
-  const handlerOffDropDown = () => {
-    css(".nav-sub-menu", "display", "none");
-  };
-  dropDown.addEventListener("mouseover", handlerOnDropDown);
-  return dropDown.addEventListener("mouseout", handlerOffDropDown);
-}
+})();
 
-// function handleDropDown() {
-//   const dropDown = getNode(".nav-menu__item");
-
-//   const handlerOnDropDown = () => {
-//     css(".nav-sub-menu", "display", "block");
-//   };
-
-//   return bindEvent(dropDown, "mouseover", handlerOnDropDown);
-// }
-
-handleDropDown();
+bindEvent(dropDown, "mouseover focus", handler);
+bindEvent(dropDown, "mouseout blur", handler);
