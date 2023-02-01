@@ -12,6 +12,7 @@
   width: 1050px;
   margin: 0 auto;
 }
+
 .header {
   max-width: var(--container-width);
   margin: 3.25rem auto;
@@ -142,12 +143,7 @@
   margin : 0 auto;
   max-width: 1920px;
   min-width: 1050px;
-  position: relative;
   margin-bottom: 1rem;
-}
-
-.swiper-wrapper{
-  height:100%;
 }
 
 .swiper .swiper-slide{
@@ -156,17 +152,31 @@
   align-items: center;
   overflow: hidden;
 }
-
-.swiper .swiper-slide img{
-  height:100%;
+.banner-button__wrapper{
+  background-color: yellow;
+  z-index: 9;
+}
+.swiper-button-prev,
+.swiper-button-next{
+  /* opacity: 0; */
+  position :absolute;
+  background:url(../assets/banner/Arrow.jpg) no-repeat;
+  width: 49px;
+  height: 49px;
+  background-position: -1px -1px;
+  border-radius: 50% 50%;
+  transition:all 0.5s;
 }
 
-.swiper-buttton-next{
-  background:url(/) no-repeat;
-  background-size: 50% auto;
-  background-position: center;
+.swiper-button-next{
+  transform: rotate(180deg);
 }
-/* https://jineecode.tistory.com/77 swiper button
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  display: none;
+}
+
 /* 베너 End */
 
 
