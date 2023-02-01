@@ -168,6 +168,8 @@ line-height: 160%;
   color: #333333;
 }
 
+
+
 .price .discount{
   font-family: 'Pretendard';
 font-style: normal;
@@ -209,7 +211,7 @@ right:-27.5px;
 
 
 
-/* 푸터 */
+/* 푸터. */
 .footer {
 
   height: 629px;
