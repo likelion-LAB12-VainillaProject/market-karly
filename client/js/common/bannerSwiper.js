@@ -38,6 +38,10 @@ const swiper = new Swiper('.swiper',{
         </span>
       `
     }
+  },
+  navigation:{
+    nextEl:".swiper-button-next",
+    prevEl:".swier-button-prev",
   }
 
 })
