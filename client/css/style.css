@@ -10,11 +10,12 @@
 
 /* 공통 */
 .common {
-  min-width: 1050px;
+  width: 1050px;
   margin: 0 auto;
 }
+
 .header {
-  max-width: 1050px;
+  min-width: 1050px;
   margin: 3.25rem auto;
   position: relative;
 }
