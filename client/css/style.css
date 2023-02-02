@@ -1,9 +1,9 @@
 /* Base Settings */
-@import url(.base/normalize.css);
-@import url(.base/reset.css);
-@import url(.base/a11y.css);
-@import url(.base/module.css);
-@import url(.base/base.css);
+@import url(./base/normalize.css);
+@import url(./base/reset.css);
+@import url(./base/a11y.css);
+@import url(./base/module.css);
+@import url(./base/base.css);
 
 /* Components */
 @import url(./components/header.css);
