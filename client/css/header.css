@@ -1,0 +1,105 @@
+.header{
+  max-width: 1050px;
+  margin: auto;
+}
+
+.header--main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-top: 40px;
+}
+
+.header--member {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  gap: 10px;
+  color: #333333;
+  font-size: 12.003px;;
+}
+
+.header--member li:nth-child(-n + 2)::after {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background-color: #D9D9D9;;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+
+.header--main-icons a {
+  margin-left: 10px;
+  /* display: inline-block; */
+}
+
+.header-main-link-list a {
+  font-size: 21.328px;
+}
+
+.header-main-link-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  color: #898989;
+}
+
+.is-active{
+  color:#5F0080;
+  
+}
+.header-main-link-list::after {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background-color: #D9D9D9;
+  margin-left: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 80px;
+}
+
+.header--main-search {
+  position: absolute;
+  width: 400px;
+  height: 60px;
+  left: 330px;
+  top: 35px;
+  border: 1px solid #5F0080;
+  border-radius: 4px;
+  padding-left: 20px;  
+  padding-right: 60px;
+}
+
+.header--main-search-icon{
+  position: absolute;
+  top: 55px;
+  right: 350px;
+}
+
+.new-badge{
+  position: absolute;
+  top: 7px;
+  left: 265px;
+}
+
+/* x표시 없앰 */
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
