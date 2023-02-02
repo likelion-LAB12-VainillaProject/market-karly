@@ -41,7 +41,7 @@ const swiper = new Swiper('.swiper',{
   },
   navigation:{
     nextEl:".swiper-button-next",
-    prevEl:".swier-button-prev",
+    prevEl:".swiper-button-prev",
   }
 
 })
