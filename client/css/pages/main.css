@@ -168,7 +168,7 @@
 .swiper-button-prev,
 .swiper-button-next{
   opacity: 0.6;
-  background:url(../assets/banner/Arrow.jpg) no-repeat;
+  background:url(../../assets/banner/Arrow.jpg) no-repeat;
   width: 48px;
   height: 48px;
   background-position: -1px -1px;
