@@ -1,0 +1,328 @@
+@import url(./reset.css);
+@import url(./nomalize.css);
+@import url(./base.css);
+@import url(./a11y.css);
+
+* {
+  list-style: none;
+}
+
+/* 공통 */
+.common {
+  width: 1050px;
+  margin: 0 auto;
+}
+.header {
+  max-width: var(--container-width);
+  margin: 3.25rem auto;
+  position: relative;
+}
+
+/* 푸터 Start */
+.footer.common{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 1050px;
+  width: 100%;
+
+  background: #FFFFFF;
+  /* gray/100 */
+  
+  border-top: 1px solid #E1E1E1;
+}
+
+.footer-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  
+  /* min-width: 1050px;
+  width: 100%; */
+  width: 1050px;
+  height: 521px;
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-color: yellow;
+}
+
+
+.footer-top{
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 28px 0px 32px;
+  /* gap: 150px; */
+  
+  height: 417px;
+
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.footer-customer__service{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 477px;
+  height: 357px;
+}
+
+.footer-customer__service-text{
+  font-weight: 700;
+  font-size: 21.328px;
+  line-height: 140%;
+  color: #333333;
+
+}
+
+.footer-customer__service-number{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 393px;
+  width: 100%;
+  height: 53px;
+  
+}
+
+.footer-customer__service-number-text1{
+  font-weight: 700;
+  font-size: 37.897px;
+  line-height: 140%;
+}
+
+.footer-customer__service-number-text2{
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.footer-customer__service-inquiry{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 477px;
+  height: 188px;
+}
+
+.customer-box1, .customer-box2, .customer-box3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  width: 477px;
+  height: 52px;
+  /* align-self: stretch; */
+}
+
+.customer-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  gap: 4px;
+  
+  width: 140px;
+  height: 40px;
+  
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  flex: none;
+}
+
+.customer-time{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  height: 52px;
+  white-space : nowrap;
+}
+
+.customer-button, .customer-time{
+  line-height: 160%;
+}
+
+.customer-email{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  
+  width: 224px;
+  height: 38px;
+
+  white-space : nowrap;
+
+}
+
+.email01, .email02{
+  font-weight: 400;
+  font-size: 12.003px;
+  line-height: 160%;
+  color: #333333;
+
+}
+
+.link{
+  color: #5F0080;
+}
+
+
+
+
+.footer-about{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 28px;
+  
+  width: 486px;
+  height: 226px;
+
+  /* margin-left: 87px; */
+}
+
+.about-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap : 13.6px;
+  /* white-space : nowrap; */
+}
+
+.about-nav-label{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+
+  color: #333333;
+}
+
+
+
+
+.about-company{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.company-infomation{
+
+}
+
+.about-social{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  
+}
+
+.about-icon{
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.about-icon > img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-middle{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0px 32px;
+  border-top: 1px solid rgb(238, 238, 238);
+}
+
+.middle-button{
+  display: flex;
+  text-align: left;
+  border: 0;
+  background-color: #fff;
+}
+
+.middle-logo1{
+  width: 34px;
+  margin-right: 8px;
+}
+.middle-logo2{
+  width: 102px;
+  margin-right: 8px;
+}
+.middle-logo-description{
+  font-size: 10px;
+  line-height: 14.5px;
+  color: rgb(153, 153, 153);
+  word-break: break-word;
+}
+
+
+/* .footer-bottom {
+  padding: 20px 4px 32px;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  background-color: rgb(247, 247, 247);
+  color: rgb(153, 153, 153);
+  overflow: hidden;
+} */
+
+.footer-bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 4px 32px;
+  gap: 4px;
+
+  /* min-width: 1050px;
+  width: 100%; */
+
+  background: #F9F9F9;
+  align-self: stretch;
+  background-color: pink;
+}
+
+.footer-bottom-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  font-size: 10px;
+  line-height: 160%;
+
+  text-align: center;
+  color: #898989;
+}
+
+.footer-bottom-text {
+  padding-top: 8px;
+}
+
+/* 푸터 End */
