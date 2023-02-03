@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>회원가입</title>
     <link rel="stylesheet" href="./css/pages/register.css" />
+    <script src="./js/common/resgister.js" type="module"></script>
   </head>
   <body>
     <main class="main common">
@@ -259,7 +260,7 @@
               <div>
                 <li class="agreement-all agreement-condition">
                   <label for="terms-agree" class="agreement-control">
-                    <input type="checkbox" name="termsAgree" id="terms-agree" />
+                    <input type="checkbox" name="agreeAll" id="terms-agree" />
                     <p>전체 동의합니다</p>
                   </label>
 
@@ -271,11 +272,7 @@
 
                 <li class="agreement-condition">
                   <label for="condition-agree" class="agreement-control">
-                    <input
-                      type="checkbox"
-                      name="conditionAgree"
-                      id="condition-agree"
-                    />
+                    <input type="checkbox" name="agree" id="condition-agree" />
 
                     <span>이용약관 동의(필수)</span>
                   </label>
@@ -284,11 +281,7 @@
 
                 <li class="register__list agreement-condition">
                   <label for="required-privacy" class="agreement-control">
-                    <input
-                      type="checkbox"
-                      name="requiredTermsOfPrivacy"
-                      id="required-privacy"
-                    />
+                    <input type="checkbox" name="agree" id="required-privacy" />
 
                     <span>개인정보 수집∙이용 동의(필수)</span>
                   </label>
@@ -297,11 +290,7 @@
 
                 <li class="register__list agreement-condition">
                   <label for="optional-privacy" class="agreement-control">
-                    <input
-                      type="checkbox"
-                      name="optionalTermsOfPrivacy"
-                      id="optional-privacy"
-                    />
+                    <input type="checkbox" name="agree" id="optional-privacy" />
 
                     <span>개인정보 수집∙이용 동의(선택)</span>
                   </label>
@@ -310,11 +299,7 @@
 
                 <li class="register__list agreement-condition">
                   <label for="signup-event" class="agreement-control">
-                    <input
-                      type="checkbox"
-                      name="signupEventAll"
-                      id="signup-event"
-                    />
+                    <input type="checkbox" name="agree" id="signup-event" />
 
                     <span>무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)</span>
                   </label>
@@ -326,7 +311,7 @@
                   <label for="required-signup__age" class="agreement-control">
                     <input
                       type="checkbox"
-                      name="requiredSignUpAged"
+                      name="agree"
                       id="required-signup__age"
                     />
 
