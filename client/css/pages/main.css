@@ -173,6 +173,7 @@ a{
 
 
 .viewed{
+  float:right;
   border : 1px solid rgb(221, 221, 221);
   /* background-color: rgb(255, 255, 255); */
 
@@ -227,7 +228,7 @@ height:51px;
 /* 메인 */
 .main {
   height: 1421px;
-  background: PowderBlue;
+  /* background: PowderBlue; */
 
 }
 
