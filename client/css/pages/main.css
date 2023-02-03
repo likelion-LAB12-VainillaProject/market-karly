@@ -7,7 +7,7 @@
   list-style: none;
 }
 
-/* 공통 */
+/* 공통.. */
 .common {
   width: 1050px;
   margin: 0 auto;
@@ -58,6 +58,7 @@ left: 1815px;
   font-size: 12px;
   color: #000000;
   letter-spacing: -0.3px;
+  float:right;
 }
 
 .viewed .uparrow{
@@ -95,7 +96,7 @@ height:51px;
 
 /* 메인 */
 .main {
-  /* height: 1421px; */
+
   background: PowderBlue;
 
 }
