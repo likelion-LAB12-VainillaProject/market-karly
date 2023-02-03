@@ -116,14 +116,14 @@
 
 
 /* 베너 Start */
-.swiper {
+.banner .swiper {
   height: 370px;
   margin : 0 auto;
-  max-width: 1920px;
-  min-width: 1050px;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
+  max-width: 1920px;
+  min-width: 1050px;
 }
 
 .swiper .swiper-slide{
@@ -133,6 +133,7 @@
   overflow: hidden;
   position: relative;
 }
+
 .banner-button__wrapper{
   top : 40%;
   width: 1250px;
@@ -143,8 +144,8 @@
   display: flex;
 }
 
-.swiper-button-prev,
-.swiper-button-next{
+.banner .swiper-button-prev,
+.banner .swiper-button-next{
   opacity: 0.6;
   background:url(../../assets/banner/Arrow.jpg) no-repeat;
   width: 48px;
@@ -153,12 +154,12 @@
   border-radius: 50% 50%;
 }
 
-.swiper-button-next{
+.banner .swiper-button-next{
   transform: rotate(180deg);
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after{
+.banner .swiper-button-prev::after,
+.banner .swiper-button-next::after{
   display: none;
 }
 
