@@ -1,0 +1,64 @@
+
+
+/* .detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px 0px;
+
+  width: 1050px;
+  height: 6752px;
+} */
+
+.detail-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 85px;
+  width: 1050px;
+  height: 1021px;
+}
+
+.prodcut-img{
+  width: 400px;
+  height: 514px;
+  background: url("./../../assets/mainImg/noodle1.png");
+  
+}
+
+.product-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 560px;
+  height: 1021px;
+  background-color: yellow;
+  order: 1;
+}
+
+.product-info-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 20px;
+  gap: 16px;
+  background-color: green;
+  width: 296px;
+  height: 238px;
+}
+
+.product-heading__delivery{
+  width: 74px;
+  height: 30px;
+
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21.328px;
+  line-height: 140%;
+  color: var(--gray-500);
+}
+
