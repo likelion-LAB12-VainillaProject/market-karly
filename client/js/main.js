@@ -13,6 +13,6 @@ for(let i = 0; i < target.length; i++){
 // 팝업 닫기
 for(let j = 0; j < target.length; j++){
   btnPopClose[j].addEventListener('click', function(){
-    this.parentNode.parentNode.parentNode.parentNode.style.display = 'none';
+    this.parentNode.parentNode.parentNode.parentNode.style.d/isplay = 'none';
   });
 }
