@@ -1,8 +1,8 @@
 import { getNode } from './../lib/dom/getNode.js';
 
 const myPopUp = getNode('.popup')
-const buttonClickLeft = getNode('.button-today-close');
-const buttonClickRight = getNode('.button-close');
+const buttonClickLeft = getNode('.popup-buttons__left-today--close');
+const buttonClickRight = getNode('.popup-buttons__right-close');
 
 // 쿠키 생성
 function setCookie(name, value, day){
