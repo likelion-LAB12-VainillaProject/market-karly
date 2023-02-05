@@ -2,35 +2,45 @@
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="회원가입 폼 만들기" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>회원가입</title>
     <link rel="stylesheet" href="./css/pages/register.css" />
+    <script src="./js/common/resgister.js" type="module"></script>
+    <script src="./js/common/login.js" type="module"></script>
   </head>
   <body>
     <main class="main common">
       <section class="main__section">
-        <form action="#">
+        <form action="#" id="form">
           <h2 class="register__title">회원가입</h2>
           <!-- 회원가입 폼 -->
+          <h1 class="a11yHidden" aria-hidden="true">필수입력사항</h1>
           <div class="register-wrapper">
-            <p class="register--required__text">
+            <p class="register--required__text" aria-hidden="true">
               필수입력사항 <span class="star">*</span>
             </p>
-            <ul class="register__total--list">
+            <ul
+              role="group"
+              aria-labelledby="registerForm"
+              class="register__total--list"
+            >
               <!-- 아이디 -->
               <li class="register__list">
                 <label class="register__label" for="id"
                   >아이디 <span class="star">*</span></label
                 >
-                <input
-                  type="text"
-                  id="id"
-                  class="register__input"
-                  name="userId"
-                  placeholder="아이디를 입력해주세요."
-                  required
-                />
+                <div class="display-error">
+                  <input
+                    type="text"
+                    id="userId"
+                    class="register__input user-id"
+                    name="userId"
+                    placeholder="아이디를 입력해주세요."
+                    required
+                  />
+                </div>
                 <button type="button" class="register__button">중복확인</button>
               </li>
 
@@ -39,15 +49,16 @@
                 <label class="register__label" for="pw"
                   >비밀번호 <span class="star">*</span></label
                 >
-                <input
-                  type="text"
-                  id="pw"
-                  class="register__input register__pw"
-                  name="userPw"
-                  placeholder="비밀번호를 입력해주세요."
-                  required
-                />
-                <div class="empty-box"></div>
+                <div class="display-error">
+                  <input
+                    type="text"
+                    id="userPw"
+                    class="register__input user-password"
+                    name="userPw"
+                    placeholder="비밀번호를 입력해주세요."
+                    required
+                  />
+                </div>
               </li>
 
               <!-- 비밀번호 확인 -->
@@ -57,13 +68,12 @@
                 >
                 <input
                   type="text"
-                  id="pw"
-                  class="register__input register__pw-check"
+                  id="pwCheck"
+                  class="register__input"
                   name="userPw"
                   placeholder="비밀번호를 한번 더 입력해주세요."
                   required
                 />
-                <div class="empty-box"></div>
               </li>
 
               <!-- 이름 -->
@@ -74,12 +84,11 @@
                 <input
                   type="name"
                   id="name"
-                  class="register__input register__name"
+                  class="register__input"
                   name="userName"
                   placeholder="이름을 입력해주세요."
                   required
                 />
-                <div class="empty-box"></div>
               </li>
 
               <!-- 이메일 -->
@@ -87,14 +96,16 @@
                 <label class="register__label" for="email"
                   >이메일 <span class="star">*</span></label
                 >
-                <input
-                  type="email"
-                  id="email"
-                  class="register__input"
-                  name="userEmail"
-                  placeholder="marketkarly@karly.com"
-                  required
-                />
+                <div class="display-error">
+                  <input
+                    type="email"
+                    id="email"
+                    class="register__input user-email"
+                    name="userEmail"
+                    placeholder="marketkarly@karly.com"
+                    required
+                  />
+                </div>
                 <button type="button" class="register__button">중복확인</button>
               </li>
 
@@ -103,15 +114,21 @@
                 <label class="register__label" for="tel"
                   >휴대폰 <span class="star">*</span></label
                 >
-                <input
-                  type="tel"
-                  id="tel"
-                  class="register__input"
-                  name="userNumber"
-                  placeholder="숫자만 입력해주세요."
-                  required
-                />
-                <button type="button" class="register__button">
+                <div class="display-error">
+                  <input
+                    type="tel"
+                    id="tel"
+                    class="register__input user-tel"
+                    name="userNumber"
+                    placeholder="숫자만 입력해주세요."
+                    required
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="register__button disabled__button"
+                  disabled
+                >
                   인증번호 받기
                 </button>
               </li>
@@ -121,7 +138,7 @@
                 <label class="register__label" for="id"
                   >주소 <span class="star">*</span></label
                 >
-                <div class="register__address">
+                <div role="search" class="register__address">
                   <button type="button" class="address__button">
                     <img
                       src="https://res.kurly.com/pc/service/cart/2007/ico_search.svg
@@ -137,8 +154,8 @@
               </li>
 
               <!-- 성별 -->
-
-              <fieldset class="register__list">
+              <h1 class="a11yHidden">추가 입력사항</h1>
+              <fieldset class="register__list" aria-labelledby="추가입력사항">
                 <legend>성별</legend>
                 <label for="gender">성별</label>
                 <div class="register__gender">
@@ -172,12 +189,11 @@
               <li class="register__list">
                 <p class="register__label">생년월일</p>
                 <div class="register__birth-wrapper">
-                  <label class="register__label a11yHidden" for="birth-year"
+                  <label class="a11yHidden" for="birth-year" aria-hidden="true"
                     >연도
                   </label>
 
                   <input
-                    class="register__input"
                     type="number"
                     id="birth-year"
                     placeholder="YYYY"
@@ -186,12 +202,15 @@
                     maxlength="4"
                   />
                   <span class="birth__dash"></span>
-                  <label class="register__label a11yHidden" for="birth-month">
+                  <label
+                    class="a11yHidden"
+                    for="birth-month"
+                    aria-hidden="true"
+                  >
                     월
                   </label>
 
                   <input
-                    class="register__input"
                     type="number"
                     id="birth-month"
                     placeholder="MM"
@@ -199,12 +218,11 @@
                     maxlength="2"
                   />
                   <span class="birth__dash"></span>
-                  <label class="register__label a11yHidden" for="birth-day">
+                  <label class="a11yHidden" for="birth-day" aria-hidden="true">
                     일
                   </label>
 
                   <input
-                    class="register__input"
                     type="number"
                     id="birth-day"
                     placeholder="DD"
@@ -218,7 +236,12 @@
               <!-- 추가입력사항 -->
               <fieldset class="register__list">
                 <legend>추가 입력사항</legend>
-                <label for="event" class="form-control">추가입력사항</label>
+                <label
+                  for="event"
+                  class="form-control"
+                  aria-labelledby="추가입력사항"
+                  >추가입력사항</label
+                >
                 <div class="add-event">
                   <input
                     type="radio"
@@ -227,11 +250,7 @@
                   />
                   <label for="checkbox">친구초대 추천인 아이디</label>
 
-                  <input
-                    type="radio"
-                    id="additional-recommender"
-                    name="event"
-                  />
+                  <input type="radio" id="additional-event" name="event" />
                   <label for="checkbox">참여 이벤트명</label>
                 </div>
               </fieldset>
@@ -239,16 +258,20 @@
 
             <div class="border-bottom"></div>
 
-            <!-- 이용약관 -->
-            <ul class="agreement__list">
-              <li class="register__list agreement">
+            <!-- 이용약관  -->
+            <ul
+              role="group"
+              aria-labelledby="agreement"
+              class="agreement__list"
+            >
+              <li class="register__list">
                 <p>이용약관 동의</p>
               </li>
-              <div class="agreement-box">
-                <li class="register__list agreement-all agreement-condition">
+              <div>
+                <li class="agreement-all agreement-condition">
                   <label for="terms-agree" class="agreement-control">
-                    <input type="checkbox" name="termsAgree" id="terms-agree" />
-                    <span>전체 동의합니다</span>
+                    <input type="checkbox" name="agreeAll" id="terms-agree" />
+                    <p>전체 동의합니다</p>
                   </label>
 
                   <p>
@@ -259,67 +282,52 @@
 
                 <li class="agreement-condition">
                   <label for="condition-agree" class="agreement-control">
-                    <input
-                      type="checkbox"
-                      name="conditionAgree"
-                      id="condition-agree"
-                    />
+                    <input type="checkbox" name="agree" id="condition-agree" />
 
                     <span>이용약관 동의(필수)</span>
                   </label>
-                  <a href="#"> 약관보기</a>
+                  <a href="#" target="_blank"> 약관보기</a>
                 </li>
 
                 <li class="register__list agreement-condition">
                   <label for="required-privacy" class="agreement-control">
-                    <input
-                      type="checkbox"
-                      name="requiredTermsOfPrivacy"
-                      id="required-privacy"
-                    />
+                    <input type="checkbox" name="agree" id="required-privacy" />
 
                     <span>개인정보 수집∙이용 동의(필수)</span>
                   </label>
-                  <a href="#"> 약관보기</a>
+                  <a href="#" target="_blank"> 약관보기</a>
                 </li>
 
                 <li class="register__list agreement-condition">
                   <label for="optional-privacy" class="agreement-control">
-                    <input
-                      type="checkbox"
-                      name="optionalTermsOfPrivacy"
-                      id="optional-privacy"
-                    />
+                    <input type="checkbox" name="agree" id="optional-privacy" />
 
                     <span>개인정보 수집∙이용 동의(선택)</span>
                   </label>
-                  <a href="#"> 약관보기</a>
+                  <a href="#" target="_blank"> 약관보기</a>
                 </li>
 
                 <li class="register__list agreement-condition">
                   <label for="signup-event" class="agreement-control">
-                    <input
-                      type="checkbox"
-                      name="signupEventAll"
-                      id="signup-event"
-                    />
+                    <input type="checkbox" name="agree" id="signup-event" />
 
                     <span>무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)</span>
                   </label>
-                  <a href="#"> 약관보기</a>
+                  <a href="#" target="_blank"> 약관보기</a>
                 </li>
 
+                <h1 class="a11yHidden" aria-hidden="true">필수입력사항</h1>
                 <li class="register__list agreement-condition">
                   <label for="required-signup__age" class="agreement-control">
                     <input
                       type="checkbox"
-                      name="requiredSignUpAged"
+                      name="agree"
                       id="required-signup__age"
                     />
 
                     <span>본인은 만 14세 이상입니다.(필수)</span>
                   </label>
-                  <a href="#"> 약관보기</a>
+                  <a href="#" target="_blank"> 약관보기</a>
                 </li>
               </div>
             </ul>
