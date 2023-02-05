@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-let target = document.querySelectorAll('.img-button'); 
-let btnPopClose = document.querySelectorAll('.addbtn .cancel, .addbtn .purple'); 
-let targetID;
-
-=======
 // 상단 스와이퍼 기능
 window.addEventListener('load', async () => {
   const swiper = new Swiper('.swiper', {
@@ -77,7 +71,6 @@ let targetID;
 
 
 
->>>>>>> bowha/develop
 // 팝업 열기
 for(let i = 0; i < target.length; i++){
   target[i].addEventListener('click', function(){
