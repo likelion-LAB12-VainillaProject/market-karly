@@ -331,7 +331,7 @@ input[type="checkbox"]:checked::before {
   background-color: var(--primary);
 }
 
-/* 에러 */
+/* 에러 메세지*/
 .display-error {
   display: flex;
   flex-flow: column;
@@ -339,8 +339,11 @@ input[type="checkbox"]:checked::before {
 
 .error,
 .password,
+.passwordCheck,
+.name,
 .number,
-.email {
+.email,
+.tel {
   font-size: var(--text-xs);
   color: var(--info-error);
   font-weight: 500;
