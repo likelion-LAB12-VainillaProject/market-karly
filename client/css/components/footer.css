@@ -1,0 +1,295 @@
+
+/* 푸터 Start */
+.footer.common{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 1050px;
+  width: 100%;
+  background: #FFFFFF;
+  border-top: 1px solid #E1E1E1;
+}
+
+.footer-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 1050px;
+  height: 521px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+
+
+.footer-top{
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 28px 0px 32px;
+  gap: 87px;
+  
+  height: 417px;
+
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.footer-customer__service{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 477px;
+  height: 357px;
+}
+
+.footer-customer__service-text{
+  font-weight: 700;
+  font-size: 21.328px;
+  line-height: 140%;
+  color: #333333;
+
+}
+
+.footer-customer__service-number{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 393px;
+  width: 100%;
+  height: 53px;
+  
+}
+
+.footer-customer__service-number-text1{
+  font-weight: 700;
+  font-size: 37.897px;
+  line-height: 140%;
+}
+
+.footer-customer__service-number-text2{
+  margin-left: 8px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.footer-customer__service-inquiry{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 477px;
+  height: 188px;
+  color: #333333;
+
+}
+
+.customer-box1, .customer-box2, .customer-box3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  width: 477px;
+  height: 52px;
+}
+
+.customer-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  gap: 4px;
+  
+  width: 140px;
+  height: 40px;
+  
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  color: #333333;
+  flex: none;
+}
+
+.customer-time{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  height: 52px;
+  white-space : nowrap;
+  font-size: 13.8px;
+}
+
+.customer-button, .customer-time{
+  line-height: 160%;
+}
+
+.customer-email{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  
+  width: 224px;
+  height: 38px;
+
+  white-space : nowrap;
+
+}
+
+.email01, .email02{
+  font-size: 12.003px;
+  line-height: 160%;
+  color: #333333;
+
+}
+
+.link{
+  color: #5F0080;
+}
+
+
+
+
+.footer-about{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 28px;
+  
+  width: 486px;
+  height: 226px;
+}
+
+.about-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap : 13.6px;
+
+}
+
+.about-nav-label{
+  font-size: 13.8px;
+  line-height: 160%;
+
+  color: #333333;
+  white-space: nowrap;
+}
+
+.about-company{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-size: 12.003px;
+  line-height: 160%;
+  color: #333333;
+}
+
+.company-infomation::before {
+  content: url("/client/assets/icons/footer-icon/bar.svg");
+  padding-right: 4px;
+  vertical-align: top;
+}
+
+.about-social{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  
+}
+
+.about-icon{
+  width: 30px;
+  height: 30px;
+}
+
+.about-icon > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* .footer-middle{
+  height: 104px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px 0px 32px;
+  border-top: 1px solid rgb(238, 238, 238);
+} */
+.footer-middle{
+  width: 1050px;
+  height: 104px;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  padding: 24px 0px 32px;
+  border-top: 1px solid rgb(238, 238, 238);
+}
+
+.middle-button{
+  display: flex;
+  text-align: left;
+  border: 0;
+  background-color: #fff;
+  gap: 8px;
+}
+
+
+
+
+.middle-logo-description{
+  font-size: 10px;
+  line-height: 160%;
+  color: #333333;
+}
+
+
+.footer-bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 4px 32px;
+  gap: 4px;
+
+  background: #F9F9F9;
+  align-self: stretch;
+}
+
+.footer-bottom-inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  font-size: 10px;
+  line-height: 160%;
+
+  text-align: center;
+  color: #898989;
+}
+
+.footer-bottom-text {
+  padding-top: 8px;
+}
+
+/* 푸터 End */
