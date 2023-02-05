@@ -44,7 +44,7 @@ const isValidTel = (asValue) => {
   return regExpTel.test(asValue);
 };
 
-//* Text -------------------------------------------------------
+//* Error Text 생성 -------------------------------------------------------
 const setText = (element, className) => {
   insertAfter(element, `<p class="${className}"></p>`);
 };
