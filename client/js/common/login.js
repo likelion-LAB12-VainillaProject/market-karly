@@ -4,19 +4,16 @@ import {
   insertAfter,
   disableElement,
   enableElement,
+  isString,
 } from "../../lib/index.js";
 
 const form = getNode("#form");
 const userId = getNode("#userId");
 const userPw = getNode("#userPw");
-const checkPassword = getNode("#pwCheck");
+const pwCheck = getNode("#pwCheck");
+const userName = getNode("#name");
 const userTel = getNode("#tel");
 const userEmail = getNode("#email");
-
-//* Text -------------------------------------------------------
-const setText = (element, className) => {
-  insertAfter(element, `<p class="${className}"></p>`);
-};
 
 //* 유효성을 확인 로직 구현 -------------------------------------------------------
 // 이메일 검증
@@ -47,67 +44,86 @@ const isValidTel = (asValue) => {
   return regExpTel.test(asValue);
 };
 
-// * Event Listener --------------------------------------------------------
-const input = getNode(".register__input");
+//* Text -------------------------------------------------------
+const setText = (element, className) => {
+  insertAfter(element, `<p class="${className}"></p>`);
+};
 
 setText(userId, "error");
 setText(userPw, "password");
+setText(pwCheck, "passwordCheck");
+setText(userName, "name");
 setText(userTel, "number");
 setText(userEmail, "email");
+setText(userTel, "tel");
 
-const error = getNode(".error");
-const password = getNode(".password");
-const number = getNode(".number");
-const email = getNode(".email");
+const errorText = getNode(".error");
+const passwordText = getNode(".password");
+const pwCheckText = getNode(".passwordCheck");
+const nameText = getNode(".name");
+const emailText = getNode(".email");
+const telText = getNode(".tel");
 
-userId.addEventListener("input", (e) => {
-  if (!isValidId(e.target.value)) {
-    error.textContent =
-      "6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합해 주세요.";
-    css(userId, "border", "1px solid red");
-  } else {
-    error.textContent = "";
-    css(userId, "border", "1px solid blue");
+// * Event Listener --------------------------------------------------------
+form.addEventListener("input", (e) => {
+  if (e.target.classList.contains("user-id")) {
+    if (!isValidId(e.target.value)) {
+      errorText.textContent =
+        "6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합해 주세요.";
+      css(userId, "border", "1px solid red");
+    } else {
+      errorText.textContent = "";
+      css(userId, "border", "1px solid blue");
+    }
+  }
+
+  if (e.target.classList.contains("user-password")) {
+    if (!isValidPw(e.target.value)) {
+      passwordText.textContent = "영문, 숫자 혼합하여 8자리 이상 입력해주세요.";
+      css(userPw, "border", "1px solid red");
+    } else {
+      passwordText.textContent = "";
+      css(userPw, "border", "1px solid blue");
+    }
+  }
+
+  if (e.target.classList.contains("pw-check")) {
+    if (userPw.value !== pwCheck.value) {
+      pwCheckText.textContent = "비밀번호가 같지 않습니다.";
+      css(pwCheck, "border", "1px solid red");
+    } else {
+      pwCheckText.textContent = "";
+      css(pwCheck, "border", "1px solid blue");
+    }
+  }
+
+  if (e.target.classList.contains("user-name")) {
+    if (!isString(userName.value) || userName.value === "") {
+      nameText.textContent = "이름을 입력해 주세요.";
+      css(userName, "border", "1px solid red");
+    } else {
+      nameText.textContent = "";
+      css(userName, "border", "1px solid blue");
+    }
+  }
+
+  if (e.target.classList.contains("user-email")) {
+    if (!isValidEmail(e.target.value)) {
+      emailText.textContent = "이메일 형식으로 입력해 주세요.";
+      css(userEmail, "border", "1px solid red");
+    } else {
+      emailText.textContent = "";
+      css(userEmail, "border", "1px solid blue");
+    }
+  }
+
+  if (e.target.classList.contains("user-tel")) {
+    if (!isValidTel(e.target.value)) {
+      telText.textContent = "휴대폰 번호를 입력해 주세요.";
+      css(userTel, "border", "1px solid red");
+    } else {
+      telText.textContent = "";
+      css(userTel, "border", "1px solid blue");
+    }
   }
 });
-
-userPw.addEventListener("input", (e) => {
-  e.preventDefault();
-  if (!isValidPw(e.target.value)) {
-    password.textContent = "영문, 숫자 혼합하여 8자리 이상 입력해주세요.";
-    css(userPw, "border", "1px solid red");
-  } else {
-    password.textContent = "";
-    css(userPw, "border", "1px solid blue");
-  }
-});
-
-userEmail.addEventListener("input", (e) => {
-  e.preventDefault();
-  if (!isValidEmail(e.target.value)) {
-    email.textContent = "이메일 형식으로 입력해 주세요.";
-    css(userEmail, "border", "1px solid red");
-  } else {
-    email.textContent = "";
-    css(userEmail, "border", "1px solid blue");
-  }
-});
-
-userTel.addEventListener("input", (e) => {
-  e.preventDefault();
-  if (!isValidTel(e.target.value)) {
-    number.textContent = "휴대폰 번호를 입력해 주세요.";
-    css(userTel, "border", "1px solid red");
-    disableElement(getNode(".disabled__button"));
-  } else {
-    number.textContent = "";
-    css(userTel, "border", "1px solid blue");
-    enableElement(getNode(".disabled__button"));
-  }
-});
-
-//* ---------------------------------------------------------
-// signButton.addEventListener("click", (e) => {
-//   e.preventDefault();
-
-// });
