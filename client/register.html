@@ -8,11 +8,12 @@
     <title>회원가입</title>
     <link rel="stylesheet" href="./css/pages/register.css" />
     <script src="./js/common/resgister.js" type="module"></script>
+    <script src="./js/common/login.js" type="module"></script>
   </head>
   <body>
     <main class="main common">
       <section class="main__section">
-        <form action="#">
+        <form action="#" id="form">
           <h2 class="register__title">회원가입</h2>
           <!-- 회원가입 폼 -->
           <h1 class="a11yHidden" aria-hidden="true">필수입력사항</h1>
@@ -30,14 +31,16 @@
                 <label class="register__label" for="id"
                   >아이디 <span class="star">*</span></label
                 >
-                <input
-                  type="text"
-                  id="userId"
-                  class="register__input"
-                  name="userId"
-                  placeholder="아이디를 입력해주세요."
-                  required
-                />
+                <div class="display-error">
+                  <input
+                    type="text"
+                    id="userId"
+                    class="register__input user-id"
+                    name="userId"
+                    placeholder="아이디를 입력해주세요."
+                    required
+                  />
+                </div>
                 <button type="button" class="register__button">중복확인</button>
               </li>
 
@@ -46,15 +49,16 @@
                 <label class="register__label" for="pw"
                   >비밀번호 <span class="star">*</span></label
                 >
-                <input
-                  type="text"
-                  id="userPw"
-                  class="register__input register__pw"
-                  name="userPw"
-                  placeholder="비밀번호를 입력해주세요."
-                  required
-                />
-                <div class="empty-box"></div>
+                <div class="display-error">
+                  <input
+                    type="text"
+                    id="userPw"
+                    class="register__input user-password"
+                    name="userPw"
+                    placeholder="비밀번호를 입력해주세요."
+                    required
+                  />
+                </div>
               </li>
 
               <!-- 비밀번호 확인 -->
@@ -64,13 +68,12 @@
                 >
                 <input
                   type="text"
-                  id="pw"
-                  class="register__input register__pw-check"
+                  id="pwCheck"
+                  class="register__input"
                   name="userPw"
                   placeholder="비밀번호를 한번 더 입력해주세요."
                   required
                 />
-                <div class="empty-box"></div>
               </li>
 
               <!-- 이름 -->
@@ -81,12 +84,11 @@
                 <input
                   type="name"
                   id="name"
-                  class="register__input register__name"
+                  class="register__input"
                   name="userName"
                   placeholder="이름을 입력해주세요."
                   required
                 />
-                <div class="empty-box"></div>
               </li>
 
               <!-- 이메일 -->
@@ -94,14 +96,16 @@
                 <label class="register__label" for="email"
                   >이메일 <span class="star">*</span></label
                 >
-                <input
-                  type="email"
-                  id="email"
-                  class="register__input"
-                  name="userEmail"
-                  placeholder="marketkarly@karly.com"
-                  required
-                />
+                <div class="display-error">
+                  <input
+                    type="email"
+                    id="email"
+                    class="register__input user-email"
+                    name="userEmail"
+                    placeholder="marketkarly@karly.com"
+                    required
+                  />
+                </div>
                 <button type="button" class="register__button">중복확인</button>
               </li>
 
@@ -110,15 +114,21 @@
                 <label class="register__label" for="tel"
                   >휴대폰 <span class="star">*</span></label
                 >
-                <input
-                  type="tel"
-                  id="tel"
-                  class="register__input"
-                  name="userNumber"
-                  placeholder="숫자만 입력해주세요."
-                  required
-                />
-                <button type="button" class="register__button">
+                <div class="display-error">
+                  <input
+                    type="tel"
+                    id="tel"
+                    class="register__input user-tel"
+                    name="userNumber"
+                    placeholder="숫자만 입력해주세요."
+                    required
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="register__button disabled__button"
+                  disabled
+                >
                   인증번호 받기
                 </button>
               </li>
