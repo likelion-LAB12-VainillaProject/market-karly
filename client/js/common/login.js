@@ -8,6 +8,8 @@ import {
 } from "../../lib/index.js";
 
 const form = getNode("#form");
+const telButton = getNode(".disabled__button");
+
 const userId = getNode("#userId");
 const userPw = getNode("#userPw");
 const pwCheck = getNode("#pwCheck");
@@ -124,6 +126,7 @@ form.addEventListener("input", (e) => {
     } else {
       telText.textContent = "";
       css(userTel, "border", "1px solid blue");
+      enableElement(telButton);
     }
   }
 });
