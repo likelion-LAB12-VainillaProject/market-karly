@@ -47,35 +47,6 @@ const isValidTel = (asValue) => {
   return regExpTel.test(asValue);
 };
 
-//* validateInputs -------------------------------------------------------
-// const validateInputs = () => {
-//   const idValue = userId.value.trim();
-//   const emailValue = email.value.trim();
-//   const passwordValue = password.value.trim();
-//   const checkPasswordValue = checkPassword.value.trim();
-//   const telValue = tel.value.trim();
-
-//   if (!isValidId(idValue)) {
-//     console.log("hi");
-//   } else {
-//     error.textContent = "통과";
-//   }
-
-//   if (!isValidPw(passwordValue)) {
-//     setError(password, "영문, 숫자 혼합하여 8자리 이상 입력해주세요.");
-//   } else {
-//     setSuccess(password, "");
-//   }
-
-//   if (!isValidTel(telValue)) {
-//     setError(tel, "휴대폰 번호를 입력해 주세요.");
-//     disableElement(getNode(".disabled__button"));
-//   } else {
-//     setSuccess(tel, "");
-//     enableElement(getNode(".disabled__button"));
-//   }
-// };
-
 // * Event Listener --------------------------------------------------------
 const input = getNode(".register__input");
 
