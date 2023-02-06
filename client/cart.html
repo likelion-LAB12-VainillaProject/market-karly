@@ -11,22 +11,132 @@
   <header class="header common">헤더</header>
 
   <nav class="navigation common">네비게이션</nav>
-
+  <!-- cart Start -->
   <main class="cart">
     <p class="cart-text">장바구니</p>
     <section class="cart-main">
       <div class="cart-main-cartlist">
-        <div class = "cart-main-cartlist-radio--01"></div>
-        <div class="cart-main-cartlist-accordian"></div>
-        <div class = "cart-main-cartlist-radio--02"></div>
+        <div class="cart-main-cartlist-radio--01">
+          <div class="cart-main-cartlist-radio-frame">
+            <img src="./assets/icons/cart-icon/isChecked-true.svg" alt="" />
+            <span>전체선택 (3/3)</span>
+            <img src="./assets/icons/cart-icon/Rectangle.svg" alt="" />
+            <span>선택삭제</span>
+          </div>
+        </div>
+        <div class="cart-main-cartlist-accordian">
+          <div class="cart-main-cartlist-accordian--01">
+            <div class="cart-main-cartlist-accordian-inner">
+              <div class="cart-main-cartlist-accordian-inner-icon">
+                <img src="./assets/icons/cart-icon/Refrigerated.svg" alt="" />
+                <span class="cart-main-cartlist-accordian-inner-icon-text">냉장 식품</span>
+              </div>
+              <div class="cart-main-cartlist-accordian-inner-arrow">
+                <img src="./assets/icons/cart-icon/Arrow.svg" alt="펼치기" class="accordian-inner-arrow-close" />
+              </div>
+            </div>
+          </div>
+          <div class="cart-main-cartlist-accordian--02">
+            <div class="cart-main-cartlist-accordian-inner">
+              <div class="cart-main-cartlist-accordian-inner-icon">
+                <img src="./assets/icons/cart-icon/Frozen.svg" alt="" />
+                <span class="cart-main-cartlist-accordian-inner-icon-text">냉동 식품</span>
+              </div>
+              <div class="cart-main-cartlist-accordian-inner-arrow">
+                <img src="./assets/icons/cart-icon/Arrow.svg" alt="펼치기" class="accordian-inner-arrow-close" />
+              </div>
+            </div>
+          </div>
+          <div class="cart-main-cartlist-accordian--03">
+            <div class="cart-main-cartlist-accordian-inner">
+              <div class="cart-main-cartlist-accordian-inner-icon">
+                <img src="./assets/icons/cart-icon/Normal.svg" alt="" />
+                <span class="cart-main-cartlist-accordian-inner-icon-text">상온 식품</span>
+              </div>
+              <div class="cart-main-cartlist-accordian-inner-arrow">
+                <img src="./assets/icons/cart-icon/Arrow.svg" alt="펼치기" class="accordian-inner-arrow-close" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "cart-main-cartlist-radio--02">
+          <div class="cart-main-cartlist-radio-frame">
+            <img src="./assets/icons/cart-icon/isChecked-true.svg" alt="" />
+            <span>전체선택 (3/3)</span>
+            <img src="./assets/icons/cart-icon/Rectangle.svg" alt="" />
+            <span>선택삭제</span>
+          </div>
+        </div>
       </div>
       <div class="cart-main-credit">
-        <div class = "cart-main-credit-location"></div>
-        <button class = "cart-main-credit-button"></button> <!--버튼 수정해야함-->
-        <div class = "cart-main-credit-notice"></div>
+        <div class = "cart-main-credit-location">
+          <div class="cart-main-credit-location-frame122">
+            <div class="cart-main-credit-location-frame122-frame121">
+              <img src="./assets/icons/cart-icon/ShippingAddress.svg" alt="" />
+              <span>배송지</span>
+            </div>
+            <p class="cart-main-credit-location-frame122-text--01">서울 중랑구 면목로 42길 11 (행운빌딩) 603호</p>
+            <p class="cart-main-credit-location-frame122-text--02">샛별배송</p>
+            <button class="cart-main-credit-location-frame122-button">배송지 변경</button>
+          </div>
+          <div class="cart-main-credit-location-frame120">
+            <div class="cart-main-credit-location-frame120-frame119">
+              <div class="cart-main-credit-location-frame120-frame119-frame113">
+                <p class="cart-main-credit-location-frame120-frame119-text">상품금액</p>
+                <div class="cart-main-credit-location-frame120-frame119-frame112">
+                  <span>40,680</span>
+                  <span class="cart-main-credit-location-frame120-frame119-frame112-won">원</span>
+                </div>
+              </div>
+              <div class="cart-main-credit-location-frame120-frame119-frame114">
+                <p class="cart-main-credit-location-frame120-frame119-text">상품할인금액</p>
+                <div class="cart-main-credit-location-frame120-frame119-frame112">
+                  <span>-4,651</span>
+                  <span class="cart-main-credit-location-frame120-frame119-frame112-won">원</span>
+                </div>
+              </div>
+              <div class="cart-main-credit-location-frame120-frame119-frame115">
+                <p class="cart-main-credit-location-frame120-frame119-text">배송비</p>
+                <div class="cart-main-credit-location-frame120-frame119-frame112">
+                  <span>+3,000</span>
+                  <span class="cart-main-credit-location-frame120-frame119-frame112-won">원</span>
+                </div>
+              </div>
+            </div>
+            <div class="cart-main-credit-location-frame120-frame118">
+              <div class="cart-main-credit-location-frame120-frame118-frame116">
+                <p class="cart-main-credit-location-frame120-frame118-text">결제예정금액</p>
+                <div class="cart-main-credit-location-frame120-frame118-frame112">
+                  <span class="cart-main-credit-location-frame120-frame118-frame112-price">40,680</span>
+                  <span class="cart-main-credit-location-frame120-frame118-frame112-won">원</span>
+                </div>
+              </div>
+              <div class="cart-main-credit-location-frame120-frame118-frame117">
+                <div class="cart-main-credit-location-frame120-frame118-frame117-badge">
+                  <span class="cart-main-credit-location-frame120-frame118-frame117-badge-text">적립</span>
+                </div>
+                <span class="cart-main-credit-location-frame120-frame118-frame117-text">최대 36원 적립 일반 0.1%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class = "cart-main-credit-button">
+          <p class="cart-main-credit-button-text">주문하기</p>
+        </button>
+        <div class = "cart-main-credit-notice">
+          <ul class="cart-main-credit-notice-list">
+            <li>쿠폰/적립금은 주문서에서 사용 가능합니다</li>
+            <li>[주문완료] 상태일 경우에만 주문 취소 가능합니다.</li>
+            <li>[마이컬리 > 주문내역 상세페이지] 에서 직접 취소하실 수 있습니다.</li>
+            <li>쿠폰, 적립금 사용 금액을 제외한 실 결제 금액 기준으로 최종 산정됩니다.</li>
+            <li>상품별로 적립금 지급 기준이 다를 수 있습니다. (상품 상세 페이지에서 확인 가능합니다)</li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
+  <!-- cart End -->
+
   <!-- footer Start -->
   <footer class="footer common">
     <section class="footer-inner">
