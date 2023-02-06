@@ -1,4 +1,37 @@
-.header{
+/* Top banner */
+.top_banner {
+  display: block;
+  background-color: var(--primary);
+}
+
+.banner--inner p,
+.banner--inner b {
+  color: var(--white);
+}
+
+.banner--inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner--inner p {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.banner--inner b {
+  font-weight: 600;
+}
+
+.banner--close__btn {
+  background-color: transparent;
+  border: none;
+  outline-offset: -5px;
+}
+
+/* Top Banner End */
+.header {
   width: 1050px;
   margin: auto;
 }
@@ -9,28 +42,28 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 .header--member {
+  min-width: 1050px;
   display: flex;
+  justify-content: flex-end;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 58px;
   gap: 10px;
-  color: #333333;
-  font-size: 12.003px;;
+  color: var(--gray-500);
+  font-size: 12px;
 }
 
 .header--member li:nth-child(-n + 2)::after {
   content: "";
   width: 2px;
   height: 10px;
-  background-color: #D9D9D9;;
+  background-color: #d9d9d9;
   margin-left: 10px;
   display: inline-block;
 }
-
 
 .header--main-icons a {
   margin-left: 10px;
@@ -38,7 +71,7 @@
 }
 
 .header-main-link-list a {
-  font-size: 21.328px;
+  font-size: 17px;
 }
 
 .header-main-link-list {
@@ -49,44 +82,43 @@
   color: #898989;
 }
 
-.is-active{
-  color:#5F0080;
-  
+.is-active {
+  color: #5f0080;
 }
 .header-main-link-list::after {
   content: "";
-  width: 2px;
-  height: 10px;
-  background-color: #D9D9D9;
+  width: 1px;
+  height: 15px;
+  background-color: var(--gray-100);
   margin-left: 10px;
   display: inline-block;
   position: absolute;
-  top: 18px;
-  right: 80px;
+  top: 15px;
+  right: 68px;
 }
 
 .header--main-search {
   position: absolute;
   width: 400px;
-  height: 60px;
+  height: 50px;
   left: 330px;
-  top: 35px;
-  border: 1px solid #5F0080;
+  top: 52px;
+  border: 1px solid var(--primary);
   border-radius: 4px;
-  padding-left: 20px;  
+  padding-left: 20px;
   padding-right: 60px;
 }
 
-.header--main-search-icon{
+.header--main-search-icon {
   position: absolute;
-  top: 55px;
+  top: 64px;
   right: 350px;
 }
 
-.new-badge{
+.new-badge {
   position: absolute;
   top: 7px;
-  left: 265px;
+  left: 234px;
 }
 
 /* x표시 없앰 */
