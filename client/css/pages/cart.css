@@ -83,6 +83,14 @@
   color: var(--content);
 }
 
+.cart-main-cartlist-radio-frame-checkbox{
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+}
+
 .cart-main-cartlist-accordian{
   display: flex;
   flex-direction: column;
