@@ -333,7 +333,7 @@ input.img-button {
     text-decoration: line-through;
 }
 
-input.nextbtn {
+/* input.nextbtn {
     background: url("../../assets/mainImg/nextbtn.png") no-repeat;
     border: none;
     width: 55px;
@@ -342,9 +342,9 @@ input.nextbtn {
     position: absolute;
     top: 40%;
     right: -27.5px;
-}
+} */
 
-div.nextbtn {
+.nextbtn, .nextbtn2 {
     background: url("../../assets/mainImg/nextbtn.png") no-repeat;
     border: none;
     width: 55px;
@@ -360,7 +360,7 @@ div.nextbtn {
     padding: 40px 0px;
 }
 
-#prevbtn, #prevbtn1{
+#prevbtn, #prevbtn2{
     background: url("../../assets/mainImg/nextbtn.png") no-repeat; 
     width: 55px;
     height: 55px;
@@ -374,11 +374,11 @@ div.nextbtn {
 }
 
 #prevbtn::after,
-#prevbtn1::after{
+#prevbtn2::after{
     display : none;
 }
 
-.swiper1, .products >  .swiper{
+.swiper1, .swiper2{
   overflow: hidden;
   height:425px;
 }

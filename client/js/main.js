@@ -9,8 +9,20 @@
       spaceBetween: 10,
       speed: 400,
       navigation: {
-          nextEl: '.products > .swiper-button-next',
-          prevEl: '.products > .swiper-button-prev',
+          nextEl: '.nextbtn',
+          prevEl: '.prevbtn',
+      },
+  });
+
+
+  const mainSwiper2 = new Swiper('.swiper2', {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      spaceBetween: 10,
+      speed: 400,
+      navigation: {
+          nextEl: '.nextbtn2',
+          prevEl: '.prevbtn2',
       },
   });
 
