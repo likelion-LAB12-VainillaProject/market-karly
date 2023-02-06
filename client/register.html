@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>회원가입</title>
     <link rel="stylesheet" href="./css/pages/register.css" />
+    <script src="./js/common/login.js" type="module"></script>
     <script src="./js/common/resgister.js" type="module"></script>
     <script src="./js/common/login.js" type="module"></script>
   </head>
   <body>
     <main class="main common">
       <section class="main__section">
-        <form action="#" id="form">
+        <form role="form" action="#" id="form" autocomplete="off">
           <h2 class="register__title">회원가입</h2>
           <!-- 회원가입 폼 -->
           <h1 class="a11yHidden" aria-hidden="true">필수입력사항</h1>
@@ -331,7 +332,9 @@
                 </li>
               </div>
             </ul>
-            <button type="submit" class="sign-button">가입하기</button>
+            <div>
+              <button type="submit" class="sign-button">가입하기</button>
+            </div>
           </div>
         </form>
       </section>
