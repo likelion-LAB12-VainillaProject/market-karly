@@ -14,7 +14,7 @@
   <body>
     <main class="main common">
       <section class="main__section">
-        <form action="#" id="form">
+        <form role="form" action="#" id="form" autocomplete="off">
           <h2 class="register__title">회원가입</h2>
           <!-- 회원가입 폼 -->
           <h1 class="a11yHidden" aria-hidden="true">필수입력사항</h1>
@@ -337,7 +337,9 @@
                 </li>
               </div>
             </ul>
-            <button type="submit" class="sign-button">가입하기</button>
+            <div>
+              <button type="submit" class="sign-button">가입하기</button>
+            </div>
           </div>
         </form>
       </section>
