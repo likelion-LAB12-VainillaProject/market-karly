@@ -364,17 +364,17 @@ right:-27.5px;
 
 /* 장바구니 팝업창 */
 
-.pop_wrap{
- position:fixed;
- top:0;
- left:0;
- right:0;
- bottom:0;
- background: rgba(0,0,0,0.5);
- text-align: center;
- margin:0;
- padding:0;
- z-index: 10;
+.pop_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
 
 }
 
