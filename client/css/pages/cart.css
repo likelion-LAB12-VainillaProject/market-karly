@@ -83,7 +83,8 @@
   color: var(--content);
 }
 
-.cart-main-cartlist-radio-frame-checkbox{
+.cart-main-cartlist-radio-frame-checkbox-all--01,
+.cart-main-cartlist-radio-frame-checkbox-all--02{
   overflow: hidden;
   position: absolute;
   clip: rect(0 0 0 0);

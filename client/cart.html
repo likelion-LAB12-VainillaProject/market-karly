@@ -10,7 +10,8 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/main.js" type="module"></script>
+    <!-- <script src="./js/main.js" type="module"></script> -->
+    <script defer src="./js/cart.js" type="module"></script>
     <title>CART</title>
   </head>
 <body>
@@ -25,8 +26,8 @@
         <div class="cart-main-cartlist-radio--01">
           <div class="cart-main-cartlist-radio-frame">
             <label class="cart-main-cartlist-radio-frame-label">
-              <input type="checkbox" class="cart-main-cartlist-radio-frame-checkbox" checked/>
-              <img src="./assets/icons/cart-icon/isChecked-true.svg" alt="" />
+              <input type="checkbox" class="cart-main-cartlist-radio-frame-checkbox-all--01"/>
+              <img src="./assets/icons/cart-icon/isChecked-false.svg" alt class="cart-main-cartlist-radio-frame-label-image--01" />
               <span>전체선택 (3/3)</span>
             </label>
             <img src="./assets/icons/cart-icon/Rectangle.svg" alt="" />
@@ -70,8 +71,11 @@
         </div>
         <div class = "cart-main-cartlist-radio--02">
           <div class="cart-main-cartlist-radio-frame">
-            <img src="./assets/icons/cart-icon/isChecked-true.svg" alt="" />
-            <span>전체선택 (3/3)</span>
+            <label class="cart-main-cartlist-radio-frame-label">
+              <input type="checkbox" id='cbox' class="cart-main-cartlist-radio-frame-checkbox-all--02"/>
+              <img src="./assets/icons/cart-icon/isChecked-false.svg" alt class="cart-main-cartlist-radio-frame-label-image--02" />
+              <span>전체선택 (3/3)</span>
+            </label>
             <img src="./assets/icons/cart-icon/Rectangle.svg" alt="" />
             <span>선택삭제</span>
           </div>
