@@ -4,23 +4,6 @@
 @import url(.././a11y.css);
 @import url(../base/root.css);
 
-/* 공통 */
-.common {
-  width: 1050px;
-  margin: 0 auto;
-}
-
-/* 헤더 */
-.header {
-  height: 125px;
-  background: Pink;
-}
-
-/* 네비게이션 */
-.navigation {
-  background: DeepSkyBlue;
-  height: 72px;
-}
 
 /* 메인 */
 .main {
