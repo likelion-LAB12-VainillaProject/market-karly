@@ -1,0 +1,123 @@
+@import url(../base/reset.css);
+@import url(../base/nomalize.css);
+@import url(../base/base.css);
+@import url(../base/a11y.css);
+@import url(../base/root.css);
+
+.common {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 125px;
+}
+
+.navigation {
+  height: 72px;
+}
+
+.main {
+  width: 1050px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* 로그인 */
+
+.login--title {
+  margin-top: 80px;
+  margin-bottom: 44px;
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -1px;
+  color: rgb(51, 51, 51);
+}
+
+ul {
+  list-style: none;
+}
+
+.login--input {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  width: 340px;
+  height: 50px;
+  padding: 0px 20px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+}
+
+.login--search {
+  box-sizing: border-box;
+  width: 340px;
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 13px;
+  color: rgb(102, 102, 102);
+  justify-content: flex-end;
+}
+
+li {
+  list-style: none;
+  float: left;
+  padding: 0 5px;
+}
+
+li:last-child::after {
+  content: "";
+}
+
+li::after {
+  content: "|";
+  float: right;
+  color: rgb(102, 102, 102);
+  margin-right: -7px;
+}
+
+.login--button {
+  width: 340px;
+  height: 54px;
+  display: block;
+  font-size: var(--text-base);
+  margin-top: 28px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+}
+
+.register--button {
+  width: 340px;
+  height: 54px;
+  display: block;
+  font-size: var(--text-base);
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--primary);
+  background-color: var(--white);
+  border: none;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+}

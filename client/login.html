@@ -4,27 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>로그인</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <a href="/">로그인</a>
-    <div>
-      <input
-        type="text"
-        class="header--main-search"
-        placeholder="아이디를 입력해주세요"
-      />
-      <input
-        type="password"
-        class="header--main-search"
-        placeholder="비밀번호를 입력해주세요"
-      />
-      <ul class="header--member">
-        <li><a href="/" class="is-active">아이디 찾기</a></li>
-        <li><a href="/">비밀번호 찾기</a></li>
-      </ul>
-      <button type="submit">로그인</button>
-      <button type="button">회원가입</button>
-    </div>
+    <main class="main common">
+      <section class="main__section">
+        <h2 class="login--title">로그인</h2>
+        <div>
+          <input
+            type="text"
+            class="login--input id"
+            placeholder="아이디를 입력해주세요"
+            required
+          />
+          <input
+            type="password"
+            class="login--input pw"
+            placeholder="비밀번호를 입력해주세요"
+            required
+          />
+          <ul class="login--search">
+            <li><a href="/" class="is-active">아이디 찾기</a></li>
+            <li><a href="/">비밀번호 찾기</a></li>
+          </ul>
+          <button type="submit" class="login--button">로그인</button>
+          <button type="button" class="register--button">회원가입</button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
