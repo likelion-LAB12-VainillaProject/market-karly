@@ -1,0 +1,56 @@
+/* popup.css Start */
+.popup{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 440px;
+  height: 672px;
+  left: calc(50% - 440px/2);
+  top: 297px;
+
+  background: var(--white);
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 999;
+  /* JS 적용을 위한 none */
+  display: none; 
+}
+
+.popup-image{
+  width: 440px;
+  height: 586px;
+}
+
+.popup-buttons{
+  display: flex;
+  padding: 0px;
+  width: 440px;
+  height: 86px;
+  line-height: 160%;
+}
+
+.popup-buttons__left, 
+.popup-buttons__right{
+  width: 220px;
+  height: 86px;
+  padding: 10px 8px;
+  border: none;
+  vertical-align: middle;
+}
+
+.popup-buttons__left {
+  border-right: 1px solid var(--gray-100);
+}
+
+.popup-buttons__left-today--close, 
+.popup-buttons__right-close{
+  width: 200px;
+  height: 66px;
+  padding: 0px 8px;
+  border: none;
+  background-color: var(--white);
+  color: var(--content);
+}
+
+/* popup.css End */

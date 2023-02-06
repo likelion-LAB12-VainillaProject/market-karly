@@ -1,8 +1,8 @@
 /* Base Settings */
-@import url(./base/normalize.css);
+@import url(./base/nomalize.css);
 @import url(./base/reset.css);
 @import url(./base/a11y.css);
-@import url(./base/module.css);
+@import url(./base/root.css);
 @import url(./base/base.css);
 
 /* Components */
@@ -14,4 +14,5 @@
 @import url(./pages/cart.css);
 @import url(./pages/register.css);
 @import url(./pages/product-list.css);
-@import url(./pages/product-list.css);
+@import url(./pages/product-detail.css);
+@import url(./pages/popup.css);
