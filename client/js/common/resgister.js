@@ -6,6 +6,7 @@ import {
   disableElement,
   enableElement,
   isString,
+  bindEvent,
 } from "../../lib/index.js";
 
 const checkAgreeAll = getNode("input[name=agreeAll]");
@@ -17,6 +18,8 @@ checkAgreeAll.addEventListener("change", (e) => {
   }
 });
 
+//* 유효성을 확인 로직 구현 -------------------------------------------------------
+
 const form = getNode("#form");
 const telButton = getNode(".disabled__button");
 
@@ -27,7 +30,6 @@ const userName = getNode("#name");
 const userTel = getNode("#tel");
 const userEmail = getNode("#email");
 
-//* 유효성을 확인 로직 구현 -------------------------------------------------------
 // 이메일 검증
 const isValidEmail = (asValue) => {
   const regExpEmail =
@@ -140,3 +142,19 @@ form.addEventListener("input", (e) => {
     }
   }
 });
+
+//* 주소검색 창 띄우기( daum API) ---------------------------------------------------
+
+const addressButton = getNode(".address__button");
+
+function findAddr() {
+  new daum.Postcode({
+    width: "500",
+    height: "500",
+    oncomplete: function (data) {
+      console.log(data);
+    },
+  }).open();
+}
+
+bindEvent(addressButton, "click", findAddr);
