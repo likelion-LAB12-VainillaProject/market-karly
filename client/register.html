@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>회원가입</title>
     <link rel="stylesheet" href="./css/pages/register.css" />
+    <!-- <script src="./js/common/login.js" type="module"></script> -->
     <script src="./js/common/resgister.js" type="module"></script>
-    <script src="./js/common/login.js" type="module"></script>
   </head>
   <body>
     <main class="main common">
@@ -22,6 +22,7 @@
               필수입력사항 <span class="star">*</span>
             </p>
             <ul
+              id="ul"
               role="group"
               aria-labelledby="registerForm"
               class="register__total--list"
@@ -51,7 +52,7 @@
                 >
                 <div class="display-error">
                   <input
-                    type="text"
+                    type="password"
                     id="userPw"
                     class="register__input user-password"
                     name="userPw"
@@ -66,14 +67,16 @@
                 <label class="register__label" for="pw"
                   >비밀번호 확인 <span class="star">*</span></label
                 >
-                <input
-                  type="text"
-                  id="pwCheck"
-                  class="register__input"
-                  name="userPw"
-                  placeholder="비밀번호를 한번 더 입력해주세요."
-                  required
-                />
+                <div class="display-error">
+                  <input
+                    type="password"
+                    id="pwCheck"
+                    class="register__input pw-check"
+                    name="userPw"
+                    placeholder="비밀번호를 한번 더 입력해주세요."
+                    required
+                  />
+                </div>
               </li>
 
               <!-- 이름 -->
@@ -81,14 +84,16 @@
                 <label class="register__label" for="name"
                   >이름 <span class="star">*</span></label
                 >
-                <input
-                  type="name"
-                  id="name"
-                  class="register__input"
-                  name="userName"
-                  placeholder="이름을 입력해주세요."
-                  required
-                />
+                <div class="display-error">
+                  <input
+                    type="name"
+                    id="name"
+                    class="register__input user-name"
+                    name="userName"
+                    placeholder="이름을 입력해주세요."
+                    required
+                  />
+                </div>
               </li>
 
               <!-- 이메일 -->
