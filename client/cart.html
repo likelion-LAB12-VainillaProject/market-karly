@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <title>CART</title>
-</head>
+<html lang="ko-Kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <title>CART</title>
+  </head>
 <body>
   <header class="header common">헤더</header>
 
@@ -18,8 +24,11 @@
       <div class="cart-main-cartlist">
         <div class="cart-main-cartlist-radio--01">
           <div class="cart-main-cartlist-radio-frame">
-            <img src="./assets/icons/cart-icon/isChecked-true.svg" alt="" />
-            <span>전체선택 (3/3)</span>
+            <label class="cart-main-cartlist-radio-frame-label">
+              <input type="checkbox" class="cart-main-cartlist-radio-frame-checkbox" checked/>
+              <img src="./assets/icons/cart-icon/isChecked-true.svg" alt="" />
+              <span>전체선택 (3/3)</span>
+            </label>
             <img src="./assets/icons/cart-icon/Rectangle.svg" alt="" />
             <span>선택삭제</span>
           </div>
