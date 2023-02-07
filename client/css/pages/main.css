@@ -1,170 +1,167 @@
-
 /* 공통 */
 .common {
   width: 1050px;
   margin: 0 auto;
 }
 
-
 /* 네비게이션 */
 .navigation {
-letter-spacing: -0.3px;
-background-color: var(--white);
-position: sticky;
-top: 0;
-box-shadow: rgb(0 0 0 / 7%) 0px 3px 4px 0px;
-width: 100%;
-z-index: 10;
+  letter-spacing: -0.3px;
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  box-shadow: rgb(0 0 0 / 7%) 2px 2px;
+  width: 100%;
+  z-index: 10;
 }
 
 .nav-box {
-height: 72px;
-min-width: 1050px;
-width: 50%;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: var(--spacing-base) 0px;
-margin: 0 auto;
-cursor: pointer;
-display: flex;
+  height: 54px;
+  min-width: 1050px;
+  width: 50%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-base) 0px;
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
 }
 
 .nav-toggle-btn {
-background: transparent;
-border: none;
-padding: 1.7rem 0;
+  background: transparent;
+  border: none;
+  padding: 1.7rem 0;
 }
 
 .button--burger:focus {
-outline-offset: 3px;
+  outline-offset: 3px;
 }
 
 .button--burger {
-transform: translateY(1.2px);
-margin-right: var(--spacing-xxs);
+  transform: translateY(1.2px);
+  margin-right: var(--spacing-xxs);
 }
 
 .category__txt:hover {
-color: var(--primary);
+  color: var(--primary);
 }
 
 /* 하위 메뉴 */
 .nav-sub-menu {
-position: absolute;
-flex-flow: column nowrap;
-background: var(--white);
-font-size: var(--text-xs);
-border: 1px solid var(--gray-100);
-margin-top: -1px;
+  position: absolute;
+  flex-flow: column nowrap;
+  background: var(--white);
+  font-size: var(--text-xs);
+  border: 1px solid var(--gray-100);
+  margin-top: -9.2px;
 }
 
 .nav-sub-menu a {
-display: flex;
-flex-flow: row nowrap;
-align-items: center;
-padding: 9px;
-gap: 7px;
-font-weight: 600;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 9px;
+  gap: 7px;
+  font-weight: 600;
 }
 .nav-sub-menu li:hover {
-background-color: var(--gray-100);
-color: var(--primary);
+  background-color: var(--gray-100);
+  color: var(--primary);
 }
 .menu__list {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-menu__item {
-text-align: center;
+  text-align: center;
 }
+
 .menu__link {
-color: var(--content);
-cursor: pointer;
-font-weight: 500;
+  color: var(--content);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: var(--text-base);
 }
 .menu__link:hover {
-color: var(--primary);
-border-bottom: 1px solid var(--gray-400);
+  color: var(--primary);
+  border-bottom: 1px solid var(--gray-400);
 }
 .menu__link:focus {
-outline-offset: 3px;
+  outline-offset: 3px;
 }
 
 /* 배송안내 버튼 */
 .notice-btn {
-padding: 4px 8px;
-border-radius: 18px;
-border: 1px solid var(--gray-100);
-color: var(--gray-400);
-font-size: 12px;
-font-weight: 500;
-letter-spacing: -0.32px;
-background: var(--white);
-cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 18px;
+  border: 1px solid var(--gray-100);
+  color: var(--gray-400);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+  background: var(--white);
+  cursor: pointer;
 }
 .notice__text {
-color: #5f0080;
-font-weight: 400;
-font-size: var(--text-xs);
-line-height: var(--spacing-base);
+  color: #5f0080;
+  font-weight: 400;
+  font-size: var(--text-xs);
+  line-height: var(--spacing-base);
 }
 /* 네비게이션 End  */
 
-
-
 /* 베너 Start */
 .banner .swiper {
-height: 370px;
-margin : 0 auto;
-margin-bottom: 1rem;
-display: flex;
-justify-content: center;
-max-width: 1920px;
-min-width: 1050px;
+  height: 370px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  max-width: 1920px;
+  min-width: 1050px;
 }
 
-.swiper .swiper-slide{
-display: flex;
-justify-content: center;
-align-items: center;
-overflow: hidden;
-position: relative;
+.swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
-.banner-button__wrapper{
-top : 40%;
-width: 1250px;
-position: absolute;
-z-index: 11;
-height : 20px;
-margin: 0 auto;
-display: flex;
+.banner-button__wrapper {
+  top: 40%;
+  width: 1250px;
+  position: absolute;
+  z-index: 11;
+  height: 20px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .banner .swiper-button-prev,
-.banner .swiper-button-next{
-opacity: 0.6;
-background:url(../../assets/banner/Arrow.jpg) no-repeat;
-width: 48px;
-height: 48px;
-background-position: -1px -1px;
-border-radius: 50% 50%;
+.banner .swiper-button-next {
+  opacity: 0.6;
+  background: url(../../assets/banner/Arrow.jpg) no-repeat;
+  width: 48px;
+  height: 48px;
+  background-position: -1px -1px;
+  border-radius: 50% 50%;
 }
 
-.banner .swiper-button-next{
-transform: rotate(180deg);
+.banner .swiper-button-next {
+  transform: rotate(180deg);
 }
 
 .banner .swiper-button-prev::after,
-.banner .swiper-button-next::after{
-display: none;
+.banner .swiper-button-next::after {
+  display: none;
 }
 
 /* 베너 End */
-
 
 /* 최근본상품 */
 
@@ -172,20 +169,19 @@ a {
   text-decoration: none;
 }
 
-
 .viewed {
-border: 1px solid rgb(221, 221, 221);
-/* background-color: rgb(255, 255, 255); */
-text-align: center;
-font-weight: 600;
-width: 80px;
-height: 152px;
-position: sticky;
-float:right;
-font-size: 12px;
-color: #000000;
-letter-spacing: -0.3px;
-margin-right:100px;
+  border: 1px solid rgb(221, 221, 221);
+  /* background-color: rgb(255, 255, 255); */
+  text-align: center;
+  font-weight: 600;
+  width: 80px;
+  height: 152px;
+  position: sticky;
+  float: right;
+  font-size: 12px;
+  color: #000000;
+  letter-spacing: -0.3px;
+  margin-right: 100px;
 }
 
 .viewed .uparrow {
@@ -196,7 +192,6 @@ margin-right:100px;
   height: 22px;
 }
 
-
 .viewed .viewedImg {
   width: 78px;
   background: url(../../assets/mainImg/viewedNoodle.png) no-repeat center center;
@@ -205,39 +200,33 @@ margin-right:100px;
   height: 51px;
 }
 
-
 .viewed .downarrow {
   background: url("../../assets/mainImg/downarrow.png") no-repeat center;
   border: none;
   cursor: pointer;
   width: 78px;
   height: 22px;
-  transform:translateY(26px);
+  transform: translateY(26px);
 }
-
 
 /* 메인 */
 .main {
   /* height: 1421px;
   background: PowderBlue; */
-
 }
-
 
 .products {
   position: relative;
   padding: 40px 0;
-
 }
 
 .mainTitle {
-
   margin-bottom: 40px;
   text-align: center;
 }
 
 .mainTitle span {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-style: normal;
   font-weight: 700;
   font-size: 28.43px;
@@ -269,7 +258,6 @@ margin-right:100px;
 .noodle img:hover {
   transform: scale(1.1);
   transition: 0.5s;
-
 }
 
 input.img-button {
@@ -283,11 +271,10 @@ input.img-button {
   right: 17px;
 }
 
-
 .price {
   width: 239px;
   height: 80px;
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   padding: 14px 10px 0 0;
 }
 
@@ -304,7 +291,7 @@ input.img-button {
 .price span {
   width: 84px;
   height: 32px;
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-style: normal;
   font-weight: 600;
   font-size: 21.328px;
@@ -312,19 +299,18 @@ input.img-button {
   color: #333333;
 }
 
-
 .price .discount {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-style: normal;
   font-weight: 600;
   font-size: 21.328px;
   line-height: 150%;
-  color: #FA622F;
+  color: #fa622f;
   margin-right: 7px;
 }
 
 .price .cost {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-style: normal;
   font-weight: 400;
   font-size: 12.003px;
@@ -344,7 +330,8 @@ input.img-button {
   right: -27.5px;
 } */
 
-.nextbtn, .nextbtn2 {
+.nextbtn,
+.nextbtn2 {
   background: url("../../assets/mainImg/nextbtn.png") no-repeat;
   border: none;
   width: 55px;
@@ -360,8 +347,9 @@ input.img-button {
   padding: 40px 0px;
 }
 
-#prevbtn, #prevbtn2{
-  background: url("../../assets/mainImg/nextbtn.png") no-repeat; 
+#prevbtn,
+#prevbtn2 {
+  background: url("../../assets/mainImg/nextbtn.png") no-repeat;
   width: 55px;
   height: 55px;
   transform: rotate(180deg);
@@ -374,15 +362,15 @@ input.img-button {
 }
 
 #prevbtn::after,
-#prevbtn2::after{
-  display : none;
+#prevbtn2::after {
+  display: none;
 }
 
-.swiper1, .swiper2{
-overflow: hidden;
-height:425px;
+.swiper1,
+.swiper2 {
+  overflow: hidden;
+  height: 425px;
 }
-
 
 /* 장바구니 팝업창 */
 
@@ -397,25 +385,22 @@ height:425px;
   margin: 0;
   padding: 0;
   z-index: 10;
-
 }
 
 .pop_wrap::after {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
-  content: '';
+  content: "";
 }
-
 
 .pop_wrap .pop_inner {
   display: inline-block;
   vertical-align: middle;
-
 }
 
 .addtocart {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-style: normal;
   display: flex;
   flex-direction: column;
@@ -429,7 +414,7 @@ height:425px;
 
   /* white */
 
-  background: #FFFFFF;
+  background: #ffffff;
   /* Below/Medium */
   z-index: 20;
   box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.2);
@@ -437,9 +422,7 @@ height:425px;
   margin: 0 auto;
   font-size: 16px;
   font-weight: 600;
-
 }
-
 
 .addtocart .cartnoodle {
   font-size: 16px;
@@ -455,13 +438,11 @@ height:425px;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .quantity {
   display: flex;
   justify-content: space-between;
-
 }
 
 .amount {
@@ -475,8 +456,6 @@ height:425px;
   position: absolute;
   left: 10%;
   top: 47%;
-
-
 }
 
 .plusbtn {
@@ -499,7 +478,6 @@ height:425px;
 .sum {
   font-size: 28.43px;
   font-weight: 700;
-
 }
 
 .reward {
@@ -512,7 +490,7 @@ height:425px;
   margin-right: 10px;
   width: 37px;
   height: 18px;
-  background: #FA622F;
+  background: #fa622f;
   border-radius: 1px;
   color: white;
   font-size: 12px;
@@ -526,30 +504,26 @@ height:425px;
   margin-top: 35px;
 }
 
-
 .cancel {
   width: 174px;
   height: 54px;
   color: black;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 4px;
-  border: 2px solid #A6A6A6;
+  border: 2px solid #a6a6a6;
 }
-
 
 .purple {
   width: 174px;
   height: 54px;
   color: white;
-  background: #5F0080;
+  background: #5f0080;
   border-radius: 4px;
-  border: #5F0080
+  border: #5f0080;
 }
-
 
 /* 푸터. */
 .footer {
-
   height: 629px;
   background: beige;
 }
