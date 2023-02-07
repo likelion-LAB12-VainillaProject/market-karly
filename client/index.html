@@ -2,6 +2,7 @@
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="마켓칼리 홈페이지" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -10,13 +11,8 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/main.js" type="module"></script>
-    <script
-      defer
-      src="./js/common/bannerSwiper.js"
-      type="text/javascript"
-    ></script>
-    <script defer src="./js/dropDown.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
+    <script src="./js/dropDown.js" type="module"></script>
 
     <title>마켓칼리</title>
   </head>
@@ -37,7 +33,7 @@
       <div class="header--main">
         <h1 class="a11yHidden">마켓컬리</h1>
         <div class="header-main-link-list">
-          <a href="/">
+          <a href="./index.html">
             <img
               src="./assets/headericons/logo.svg"
               alt="마켓칼리 로고"
@@ -581,7 +577,7 @@
         <!-- 배너이미지 -->
         <div class="line-banner">
           <a href="#">
-            <img src="./assets/mainImg/line-banner.png" />
+            <img src="./assets/mainImg/line-banner.png" alt="배너 이미지" />
           </a>
         </div>
 
@@ -826,6 +822,28 @@
         </div>
       </div>
     </main>
+
+    <!-- popup Start -->
+    <section class="popup">
+      <div class="popup-image">
+        <img
+          src="./assets/popup/beauty_platform.png"
+          alt="처음 만나는 뷰티 플랫폼 BEAUTY PLATFORM"
+        />
+      </div>
+      <div class="popup-buttons">
+        <div class="popup-buttons__left">
+          <button type="button" class="popup-buttons__left-today--close">
+            오늘 하루 안 보기
+          </button>
+        </div>
+        <div class="popup-buttons__right">
+          <button type="button" class="popup-buttons__right-close">닫기</button>
+        </div>
+      </div>
+    </section>
+    <!-- popup End -->
+
     <!-- footer Start -->
     <footer class="footer common">
       <section class="footer-inner">

@@ -8,7 +8,8 @@
     <title>회원가입</title>
     <link rel="stylesheet" href="./css/pages/register.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/common/resgister.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
+    <script src="./js/dropDown.js" type="module"></script>
     <!-- 주소 검색 API -->
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
   </head>
@@ -27,7 +28,7 @@
       <div class="header--main">
         <h1 class="a11yHidden">마켓컬리</h1>
         <div class="header-main-link-list">
-          <a href="/">
+          <a href="./index.html">
             <img
               src="./assets/headericons/logo.svg"
               alt="마켓칼리 로고"
@@ -334,7 +335,9 @@
                     required
                   />
                 </div>
-                <button type="button" class="register__button">중복확인</button>
+                <button type="button" class="register__button id-check">
+                  중복확인
+                </button>
               </li>
 
               <!-- 비밀번호 -->
