@@ -1,3 +1,6 @@
+import { getNode} from "../lib/dom/index.js";
+import { handlerSignOut } from './sign/sign.js';
+
 //상단 스와이퍼 기능
 
 const mainSwiper = new Swiper(".swiper1", {
@@ -47,10 +50,11 @@ document.querySelector(".plusbtn").addEventListener("click", () => {
   sum.textContent = (priceValue * (value + 1)).toLocaleString() + "원";
 });
 
-// 장바구니 모양 누르면 팝업창
+/* 문제 해결하는 동안 잠시 주석 처리
 
-let target = document.querySelectorAll(".img-button");
-let btnPopClose = document.querySelectorAll(".addbtn .cancel, .addbtn .purple");
+// 장바구니 모양 누르면 팝업창
+let target = document.querySelectorAll('.img-button');
+// let btnPopClose = document.querySelectorAll('.addbtn .cancel, .addbtn .purple');
 let targetID;
 
 // 팝업 열기
@@ -61,9 +65,31 @@ for (let i = 0; i < target.length; i++) {
   });
 }
 
-// 팝업 닫기
-for (let j = 0; j < target.length; j++) {
-  btnPopClose[j].addEventListener("click", function () {
-    this.parentNode.parentNode.parentNode.parentNode.style.display = "none";
+//팝업 닫기
+for(let j = 0; j < target.length; j++){
+  btnPopClose[j].addEventListener('click', function(){
+    this.parentNode.parentNode.parentNode.parentNode.style.display = 'none';
   });
+};
+
+ */
+
+
+
+
+// 로그인 된 상태에서 글자 변경 및 '로그아웃' 버튼 기능 구현
+for (let i = 0; i < window.localStorage.length; i++) {
+  const key = window.localStorage.key(i)
+  const userObj = JSON.parse(localStorage.getItem(key))
+  if (userObj.check === 'true'){
+    getNode('.register').innerHTML = `${userObj.userId}`;
+  
+    getNode('.signIn').innerHTML = '<a href="index.html">로그아웃</a>'
+    getNode('.signIn').className = 'signOut'
+    const signOut = getNode('.signOut')
+
+    signOut.addEventListener('click', () => 
+      handlerSignOut(key)
+    );
+  }
 }
