@@ -4,6 +4,13 @@
   margin: 0 auto;
 }
 
+.product-box {
+  width: 1450px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
 /* product list */
 
 .bestTitle {
@@ -15,22 +22,15 @@
   text-align: center;
 }
 
-.main {
-  width: 783px;
-}
-
 /* 아코디언 메뉴부분 */
 
 .accordion {
   position: sticky;
   width: 220px;
-  float: left;
   flex-shrink: 0;
   height: 100%;
-  max-height: calc(100vh - 120px);
   top: 80px;
-  margin-right: 47px;
-  margin-left: 200px;
+  margin-right: 50px;
 }
 
 .content button {
@@ -39,7 +39,7 @@
 }
 
 .accordion .filter {
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid var(--gray-200);
   padding-bottom: 20px;
   font-size: 16px;
   font-weight: 600;
@@ -49,7 +49,7 @@
 .filter:after {
   content: "초기화";
   margin-left: 20px;
-  color: #a6a6a6;
+  color: var(--gray-300);
   font-size: 10px;
   font-weight: 600;
   position: absolute;
@@ -58,8 +58,8 @@
 }
 
 .collapsible {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
   cursor: pointer;
   padding: 0px;
   height: 52px;
@@ -68,13 +68,13 @@
   text-align: left;
 
   font-size: 15px;
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid var(--gray-200);
   position: relative;
 }
 
 .active,
 .collapsible:hover {
-  background-color: white;
+  background-color: var(--white);
 }
 
 .brand {
@@ -95,7 +95,7 @@
 }
 .collapsible:after {
   content: url("../../assets/mainImg/Vector.svg");
-  color: white;
+  color: var(--white);
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -114,7 +114,7 @@
 
 .content li span:last-child {
   font-size: 12px;
-  color: #a6a6a6;
+  color: var(--gray-300);
   font-weight: 400;
 }
 
@@ -130,7 +130,7 @@
 .content .more {
   align-items: center;
   justify-content: center;
-  color: #a6a6a6;
+  color: var(--gray-300);
   font-size: 12px;
   font-weight: 600;
   margin-top: 10px;
@@ -197,7 +197,7 @@
 }
 
 .clicked {
-  color: black;
+  color: var(--black);
 }
 
 .hiddenbox {
@@ -232,8 +232,12 @@
 }
 
 .products .swiper {
-  /* background-color: greenyellow; */
+  /* background-color: var(--secondary); */
   height: 538px;
+}
+
+.swiper-slide {
+  padding-bottom: 60px;
 }
 
 .noodle {
@@ -267,7 +271,7 @@ input.img-button {
 }
 
 .price .list-main-delivery {
-  color: #898989;
+  color: var(--gray-400);
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 8px;
@@ -278,7 +282,7 @@ input.img-button {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  color: #333333;
+  color: var(--content);
   margin-bottom: 8px;
   margin-top: 0px;
 }
@@ -291,7 +295,7 @@ input.img-button {
   font-weight: 600;
   font-size: 21.328px;
   line-height: 150%;
-  color: #333333;
+  color: var(--content);
 }
 
 .price .discount {
@@ -300,7 +304,7 @@ input.img-button {
   font-weight: 600;
   font-size: 21.328px;
   line-height: 150%;
-  color: #fa622f;
+  color: var(--accent-yellow);
   margin-right: 7px;
 }
 
@@ -310,13 +314,13 @@ input.img-button {
   font-weight: 400;
   font-size: 12.003px;
   line-height: 160%;
-  color: #898989;
+  color: var(--gray-400);
   text-decoration: line-through;
 }
 
 .price .list-main-details {
   font-size: 12px;
-  color: #898989;
+  color: var(--gray-400);
   font-weight: 400;
   margin-bottom: 8px;
   margin-top: 8px;
@@ -326,14 +330,14 @@ input.img-button {
 .list-main-gray .limited {
   font-weight: 600;
   font-size: 12px;
-  color: #5f0080;
+  color: var(--primary);
   padding: 4px 8px;
   background: #e1e1e1;
   border-radius: 4px;
 }
 
 .list-main-gray .limited {
-  color: #333333;
+  color: var(--content);
 }
 
 input.nextbtn {
@@ -508,9 +512,9 @@ div.nextbtn {
   margin-right: 10px;
   width: 37px;
   height: 18px;
-  background: #fa622f;
+  background: var(--accent-yellow);
   border-radius: 1px;
-  color: white;
+  color: var(--white);
   font-size: 12px;
 }
 
@@ -525,19 +529,19 @@ div.nextbtn {
 .cancel {
   width: 174px;
   height: 54px;
-  color: black;
-  background: #ffffff;
+  color: var(--black);
+  background: var(--white);
   border-radius: 4px;
-  border: 2px solid #a6a6a6;
+  border: 2px solid var(--gray-300);
 }
 
 .purple {
   width: 174px;
   height: 54px;
-  color: white;
-  background: #5f0080;
+  color: var(--white);
+  background: var(--primary);
   border-radius: 4px;
-  border: #5f0080;
+  border: var(--primary);
 }
 /* 장바구니 끝 */
 

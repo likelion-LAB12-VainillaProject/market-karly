@@ -2,6 +2,7 @@ import { getNode } from "../../lib/index.js";
 import { handlerSignOut } from "../sign/index.js";
 
 // 버튼색깔바뀌는 기능
+
 let tab = document.querySelectorAll(".tab-btn");
 let click = true;
 
@@ -36,6 +37,7 @@ window.addEventListener("load", async () => {
   });
 
   // 추천순,신상품순 클릭시 글자색 변경하는 기능
+
   document.getElementById("nextbtn").addEventListener("click", () => {
     swiper.slideNext();
   });
@@ -66,10 +68,11 @@ window.addEventListener("load", async () => {
   init();
 
   // 수량 및 가격변경 기능구현
-  const quantityNumber = getNode(".quantity-number");
-  const price = getNode(".quantity-price");
-  const sum = getNode(".sum");
-  getNode(".minusbtn").addEventListener("click", () => {
+
+  const quantityNumber = document.querySelector(".quantity-number");
+  const price = document.querySelector(".quantity-price");
+  const sum = document.querySelector(".sum");
+  document.querySelector(".minusbtn").addEventListener("click", () => {
     const value = Number(quantityNumber.textContent);
     const priceValue = Number(
       price.textContent.replaceAll("원", "").replaceAll(",", "")
@@ -80,7 +83,7 @@ window.addEventListener("load", async () => {
     }
   });
 
-  getNode(".plusbtn").addEventListener("click", () => {
+  document.querySelector(".plusbtn").addEventListener("click", () => {
     const value = Number(quantityNumber.textContent);
     const priceValue = Number(
       price.textContent.replaceAll("원", "").replaceAll(",", "")
@@ -91,6 +94,7 @@ window.addEventListener("load", async () => {
 });
 
 // 장바구니 모양 누르면 팝업창
+
 let target = document.querySelectorAll(".img-button");
 let btnPopClose = document.querySelectorAll(".addbtn .cancel, .addbtn .purple");
 let targetID;
@@ -99,7 +103,7 @@ let targetID;
 for (let i = 0; i < target.length; i++) {
   target[i].addEventListener("click", function () {
     targetID = this.getAttribute("href");
-    getNode(targetID).style.display = "block";
+    document.querySelector(targetID).style.display = "block";
   });
 }
 /* 
@@ -113,17 +117,15 @@ for (let j = 0; j < target.length; j++) {
 
 // 로그인 된 상태에서 글자 변경 및 '로그아웃' 버튼 기능 구현
 for (let i = 0; i < window.localStorage.length; i++) {
-  const key = window.localStorage.key(i)
-  const userObj = JSON.parse(localStorage.getItem(key))
-  if (userObj.check === 'true'){
-    getNode('.register').innerHTML = `${userObj.userId}`;
-  
-    getNode('.signIn').innerHTML = '<a href="index.html">로그아웃</a>'
-    getNode('.signIn').className = 'signOut'
-    const signOut = getNode('.signOut')
+  const key = window.localStorage.key(i);
+  const userObj = JSON.parse(localStorage.getItem(key));
+  if (userObj.check === "true") {
+    getNode(".register").innerHTML = `${userObj.userId}`;
 
-    signOut.addEventListener('click', () => 
-      handlerSignOut(key)
-    );
+    getNode(".signIn").innerHTML = '<a href="index.html">로그아웃</a>';
+    getNode(".signIn").className = "signOut";
+    const signOut = getNode(".signOut");
+
+    signOut.addEventListener("click", () => handlerSignOut(key));
   }
 }
