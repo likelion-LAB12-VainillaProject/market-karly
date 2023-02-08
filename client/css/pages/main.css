@@ -1,8 +1,4 @@
 /* 공통 */
-.common {
-  width: 1050px;
-  margin: 0 auto;
-}
 
 /* 네비게이션 */
 .navigation {
@@ -10,16 +6,15 @@
   background-color: var(--white);
   position: sticky;
   top: 0;
-
-  box-shadow: rgb(0 0 0 / 7%) 2px 2px;
+  border-bottom: var(--gray-400);
   width: 100%;
   z-index: 10;
 }
 
 .nav-box {
   height: 54px;
-  min-width: 1050px;
-  width: 50%;
+  max-width: 1050px;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
