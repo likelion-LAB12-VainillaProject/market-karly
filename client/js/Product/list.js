@@ -1,4 +1,5 @@
 import { getNode } from "../../lib/index.js";
+import { handlerSignOut } from "../sign/index.js";
 
 // 버튼색깔바뀌는 기능
 let tab = document.querySelectorAll(".tab-btn");
@@ -101,10 +102,28 @@ for (let i = 0; i < target.length; i++) {
     getNode(targetID).style.display = "block";
   });
 }
-
+/* 
 // 팝업 닫기
 for (let j = 0; j < target.length; j++) {
   btnPopClose[j].addEventListener("click", function () {
     this.parentNode.parentNode.parentNode.parentNode.style.display = "none";
   });
+}
+ */
+
+// 로그인 된 상태에서 글자 변경 및 '로그아웃' 버튼 기능 구현
+for (let i = 0; i < window.localStorage.length; i++) {
+  const key = window.localStorage.key(i)
+  const userObj = JSON.parse(localStorage.getItem(key))
+  if (userObj.check === 'true'){
+    getNode('.register').innerHTML = `${userObj.userId}`;
+  
+    getNode('.signIn').innerHTML = '<a href="index.html">로그아웃</a>'
+    getNode('.signIn').className = 'signOut'
+    const signOut = getNode('.signOut')
+
+    signOut.addEventListener('click', () => 
+      handlerSignOut(key)
+    );
+  }
 }
