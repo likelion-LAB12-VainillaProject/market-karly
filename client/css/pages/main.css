@@ -375,6 +375,19 @@ input.img-button {
 /* 장바구니 팝업창 */
 
 .pop_wrap {
+<<<<<<< HEAD
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    z-index:10;
+
+=======
   position: fixed;
   top: 0;
   left: 0;
@@ -385,6 +398,7 @@ input.img-button {
   margin: 0;
   padding: 0;
   z-index: 10;
+>>>>>>> 43834f12c3079b7f0b5ec872bdd8d1566dd76ff3
 }
 
 .pop_wrap::after {
