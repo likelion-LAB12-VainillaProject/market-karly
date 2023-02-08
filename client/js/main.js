@@ -1,21 +1,59 @@
-// 상단 스와이퍼 기능
-window.addEventListener('load', async () => {
-  const swiper = new Swiper('.swiper', {
+//상단 스와이퍼 기능
+
+
+
+
+  const mainSwiper = new Swiper('.swiper1', {
       slidesPerView: 4,
       slidesPerGroup: 4,
       spaceBetween: 10,
       speed: 400,
       navigation: {
-          nextEl: '.nextBtn',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.nextbtn',
+          prevEl: '.prevbtn',
       },
   });
 
-  document.getElementById('nextbtn').addEventListener('click', () => {
-      swiper.slideNext();
-  })
+
+  const mainSwiper2 = new Swiper('.swiper2', {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      spaceBetween: 10,
+      speed: 400,
+      navigation: {
+          nextEl: '.nextbtn2',
+          prevEl: '.prevbtn2',
+      },
+  });
+
+  // const mainSwiper = new Swiper('.swiper2', {
+  //     slidesPerView: 4,
+  //     slidesPerGroup: 4,
+  //     spaceBetween: 10,
+  //     speed: 400,
+  //     navigation: {
+  //         nextEl: '.products > .swiper-button-next',
+  //         prevEl: '.products > .swiper-button-prev',
+  //     },
+  // });
 
 
+
+// window.addEventListener('load', async () => {
+//   const mainSwiper = new Swiper('.swiper1', {
+//       slidesPerView: 4,
+//       slidesPerGroup: 4,
+//       spaceBetween: 10,
+//       speed: 400,
+//       navigation: {
+//           nextEl: '.nextBtn',
+//           prevEl: '.swiper-button-prev',
+//       },
+//   });
+
+//   document.getElementById('nextbtn').addEventListener('click', () => {
+//   mainSwiper.slideNext();
+//   })
 
 
   // 수량 및 가격변경 기능구현
@@ -38,26 +76,9 @@ window.addEventListener('load', async () => {
       quantityNumber.textContent = value + 1;
       sum.textContent = (priceValue * (value + 1)).toLocaleString() + '원';
   });
-});
 
 
-// 하단 스와이퍼기능
 
-window.addEventListener('load', async () => {
-  const swiper1 = new Swiper('.swiper1', {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-      spaceBetween: 10,
-      speed: 400,
-      navigation: {
-          nextEl: '.nextBtn',
-          prevEl: '.swiper-button-prev',
-      },
-  });
-
-  document.getElementById('nextbtn1').addEventListener('click', () => {
-      swiper1.slideNext();
-  });});
 
 
 
