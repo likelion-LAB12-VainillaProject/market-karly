@@ -6,8 +6,6 @@
   align-items: flex-start;
   padding: 4px 4px 96px;
   gap: 4px;
-
-  /* width: 1920px; */
   height: 6852px;
   order: 2;
   flex-grow: 0;
@@ -33,7 +31,6 @@
   gap: 85px;
   width: 1050px;
   height: 1021px;
-  background-color: ivory;
   margin: 0 auto;
 }
 
@@ -70,7 +67,6 @@
   font-size: 21.328px;
   line-height: 140%;
   color: var(--gray-500);
-  background-color: lightpink;
 }
 
 .product-heading__name {
