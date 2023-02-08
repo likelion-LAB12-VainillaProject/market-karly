@@ -1,4 +1,4 @@
-// 버튼색깔바뀌는 기능
+// 버튼색깔바뀌는 기능..
 
 let tab = document.querySelectorAll(".tab-btn");
 let click = true;
