@@ -263,6 +263,7 @@ div.nextbtn {
     text-align: center;
     margin: 0;
     padding: 0;
+    z-index:10;
 
 }
 
