@@ -4,6 +4,7 @@
   "description": "멋쟁이 사자처럼 바닐라 프로젝트",
   "main": "main.js",
   "scripts": {
+    "all": "run-p start serve",
     "start": "npx live-server client --host=localhost --port=3000 --no-browser ",
     "serve": "npx json-server server/db/data.json"
   },

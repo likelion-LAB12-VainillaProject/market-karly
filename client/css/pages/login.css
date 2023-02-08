@@ -8,6 +8,7 @@
 /* 로그인 */
 
 .login-main {
+  min-width: 1050px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,8 +51,7 @@
   align-items: flex-end;
   padding: 0px;
   gap: 12px;
-  width: 340px;
-  height: 143px;
+  height: 140px;
 }
 
 .login--input {
