@@ -8,7 +8,8 @@
     <title>회원가입</title>
     <link rel="stylesheet" href="./css/pages/register.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/common/resgister.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
+    <script src="./js/dropDown.js" type="module"></script>
     <!-- 주소 검색 API -->
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
   </head>
@@ -27,7 +28,7 @@
       <div class="header--main">
         <h1 class="a11yHidden">마켓컬리</h1>
         <div class="header-main-link-list">
-          <a href="/">
+          <a href="./index.html">
             <img
               src="./assets/headericons/logo.svg"
               alt="마켓칼리 로고"
@@ -334,7 +335,9 @@
                     required
                   />
                 </div>
-                <button type="button" class="register__button">중복확인</button>
+                <button type="button" class="register__button id-check">
+                  중복확인
+                </button>
               </li>
 
               <!-- 비밀번호 -->
@@ -714,7 +717,7 @@
               <ul>
                 <li>
                   법인명 (상호) : 주식회사 칼리
-                  <span class="company-infomation"></span>
+                  <span class="company-information"></span>
                   사업자등록번호 : 261-81-23567
                   <a
                     href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2618123567&amp;apv_perm_no="
@@ -820,7 +823,7 @@
         <div class="footer-middle">
           <button class="middle-button">
             <img
-              src="https://res.kurly.com/pc/ico/2208/logo_isms.svg"
+              src="./assets/icons/footer-icon/logo_isms.svg"
               alt="isms 로고"
               class="middle-logo1"
             />
@@ -833,7 +836,7 @@
 
           <button class="middle-button">
             <img
-              src="https://res.kurly.com/pc/ico/2208/logo_privacy.svg"
+              src="./assets/icons/footer-icon/logo_privacy.svg"
               alt="eprivacy plus 로고"
               class="middle-logo1"
             />
@@ -845,7 +848,7 @@
 
           <button class="middle-button">
             <img
-              src="https://res.kurly.com/pc/ico/2208/logo_tosspayments.svg"
+              src="./assets/icons/footer-icon/logo_tosspayments.svg"
               alt="payments 로고"
               class="middle-logo2"
             />
@@ -857,7 +860,7 @@
 
           <button class="middle-button">
             <img
-              src="https://res.kurly.com/pc/ico/2208/logo_wooriBank.svg"
+              src="./assets/icons/footer-icon/logo_wooriBank.svg"
               alt="우리은행 로고"
               class="middle-logo3"
             />

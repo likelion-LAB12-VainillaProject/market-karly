@@ -1,7 +1,5 @@
-
-
 /* 제목과 가격 */
-.product-detail{
+.product-detail {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -15,7 +13,7 @@
   flex-grow: 0;
 }
 
-.detail{
+.detail {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,7 +24,7 @@
   height: 1021px;
 }
 
-.detail-info{
+.detail-info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -36,16 +34,15 @@
   width: 1050px;
   height: 1021px;
   background-color: ivory;
-  margin :0 auto;
+  margin: 0 auto;
 }
 
-.prodcut-img{
+.product-img {
   width: 400px;
   height: 514px;
-  
 }
 
-.product-info{
+.product-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -56,7 +53,7 @@
   background-color: lightsalmon;
 }
 
-.product-info-heading{
+.product-info-heading {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -64,11 +61,11 @@
   gap: 16px;
   width: 296px;
   height: 238px;
-  flex:none;
+  flex: none;
   background-color: lightcyan;
 }
 
-.product-heading__delivery{
+.product-heading__delivery {
   height: 30px;
   order: 0;
   font-weight: 700;
@@ -78,13 +75,13 @@
   background-color: lightpink;
 }
 
-.product-heading__name{
+.product-heading__name {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 4px;
-  order :1;
+  order: 1;
   width: 296px;
   height: 73px;
   font-weight: 600;
@@ -92,74 +89,72 @@
   line-height: 150%;
 }
 
-
-.product-heading__title{
+.product-heading__title {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 4px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
 
-width: 296px;
-height: 73px;
+  width: 296px;
+  height: 73px;
 }
-.product-title-name{
+.product-title-name {
   font-weight: 600;
-font-size: 28.43px;
-line-height: 150%;
-color: var(--content);
+  font-size: 28.43px;
+  line-height: 150%;
+  color: var(--content);
 }
 
-.product-title-description{
+.product-title-description {
   font-weight: 400;
-font-size: 16px;
-line-height: 160%;
-color: var(--gray-400);
-order: 1;
-flex: none;
+  font-size: var(--text-base);
+  line-height: 160%;
+  color: var(--gray-400);
+  order: 1;
+  flex: none;
 }
 
-.product-heading__price{
+.product-heading__price {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   padding: 0px;
-  gap: 4px;
+  gap: var(--spacing-xs);
   width: 98px;
   height: 43px;
   flex: none;
   order: 2;
   font-weight: 700;
-font-size: 16px;
-line-height: 140%;
+  font-size: var(--text-base);
+  line-height: 140%;
 }
 
-.product-price{
+.product-price {
   width: 80px;
   height: 43px;
   font-weight: 600;
   font-size: 28.43px;
   line-height: 150%;
-  color: #333333;
+  color: var(--content);
   flex: none;
 }
 
-.product-heading__login{
+.product-heading__login {
   height: 24px;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 150%; 
+  font-size: var(--text-base);
+  line-height: 150%;
   color: var(--primary);
   flex: none;
   order: 3;
   flex-grow: 0;
 }
 
-
 /* 우측 중앙 정보 테이블  */
 
-.product-more{
+.product-more {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -170,14 +165,14 @@ line-height: 140%;
   align-self: stretch;
 }
 
-.product-more-set{
-  margin-top:-1px;
+.product-more-set {
+  margin-top: -1px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 16px 0px;
+  padding: var(--spacing-base) 0px;
   font-weight: 600;
-  font-size: 12.003px;
+  font-size: var(--text-sm);
   line-height: 150%;
   color: var(--gray-400);
   width: 560px;
@@ -187,7 +182,7 @@ line-height: 140%;
   border-color: var(--gray-400);
 }
 
-.more__title{
+.more__title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -197,28 +192,23 @@ line-height: 140%;
   height: 26px;
 }
 
-.more__info{
+.more__info {
   display: inline;
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
   width: 100%;
-  
 }
-.more__info__kindOf{
+.more__info__kindOf {
   height: 18px;
   color: var(--gray-500);
 }
 
-/* .more__info__contents{
-
-} */
-
-.multi{
+.multi {
   top: 1px;
 }
 
-.more__info-select{
+.more__info-select {
   width: 432px;
   height: 84px;
 }

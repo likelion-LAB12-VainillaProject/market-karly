@@ -56,14 +56,15 @@ loginButton.addEventListener("click", (e) => {
           arr.push(uniqueId);
 
           // 해당 유저의 Unique ID를 확인 후 로그인
-          setStorage("Unique ID", JSON.stringify(arr));
+          setStorage("Unique ID", serialize(value));
 
           alert("로그인 되었습니다.");
 
           // 로그인 완료시 홈으로 돌아가기
-          location.assign("index.html");
+          location.href = "index.html";
         }
 
+        // 해당 유저의 Unique ID가 없다면, user data값이랑 같지않다면 경고창 띄우기
         if (
           !getStorage("Unique ID") ||
           (user.userId !== userIdValue && user.userPw !== userPwValue)
