@@ -1,3 +1,5 @@
+import { getNode } from "../../lib/index.js";
+
 // 버튼색깔바뀌는 기능
 let tab = document.querySelectorAll(".tab-btn");
 let click = true;
@@ -63,10 +65,10 @@ window.addEventListener("load", async () => {
   init();
 
   // 수량 및 가격변경 기능구현
-  const quantityNumber = document.querySelector(".quantity-number");
-  const price = document.querySelector(".quantity-price");
-  const sum = document.querySelector(".sum");
-  document.querySelector(".minusbtn").addEventListener("click", () => {
+  const quantityNumber = getNode(".quantity-number");
+  const price = getNode(".quantity-price");
+  const sum = getNode(".sum");
+  getNode(".minusbtn").addEventListener("click", () => {
     const value = Number(quantityNumber.textContent);
     const priceValue = Number(
       price.textContent.replaceAll("원", "").replaceAll(",", "")
@@ -77,7 +79,7 @@ window.addEventListener("load", async () => {
     }
   });
 
-  document.querySelector(".plusbtn").addEventListener("click", () => {
+  getNode(".plusbtn").addEventListener("click", () => {
     const value = Number(quantityNumber.textContent);
     const priceValue = Number(
       price.textContent.replaceAll("원", "").replaceAll(",", "")
@@ -96,7 +98,7 @@ let targetID;
 for (let i = 0; i < target.length; i++) {
   target[i].addEventListener("click", function () {
     targetID = this.getAttribute("href");
-    document.querySelector(targetID).style.display = "block";
+    getNode(targetID).style.display = "block";
   });
 }
 
