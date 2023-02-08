@@ -1,6 +1,5 @@
-import { getNode } from "../../lib/index.js";
-
 // 버튼색깔바뀌는 기능
+
 let tab = document.querySelectorAll(".tab-btn");
 let click = true;
 
@@ -35,6 +34,7 @@ window.addEventListener("load", async () => {
   });
 
   // 추천순,신상품순 클릭시 글자색 변경하는 기능
+
   document.getElementById("nextbtn").addEventListener("click", () => {
     swiper.slideNext();
   });
@@ -65,10 +65,11 @@ window.addEventListener("load", async () => {
   init();
 
   // 수량 및 가격변경 기능구현
-  const quantityNumber = getNode(".quantity-number");
-  const price = getNode(".quantity-price");
-  const sum = getNode(".sum");
-  getNode(".minusbtn").addEventListener("click", () => {
+
+  const quantityNumber = document.querySelector(".quantity-number");
+  const price = document.querySelector(".quantity-price");
+  const sum = document.querySelector(".sum");
+  document.querySelector(".minusbtn").addEventListener("click", () => {
     const value = Number(quantityNumber.textContent);
     const priceValue = Number(
       price.textContent.replaceAll("원", "").replaceAll(",", "")
@@ -79,7 +80,7 @@ window.addEventListener("load", async () => {
     }
   });
 
-  getNode(".plusbtn").addEventListener("click", () => {
+  document.querySelector(".plusbtn").addEventListener("click", () => {
     const value = Number(quantityNumber.textContent);
     const priceValue = Number(
       price.textContent.replaceAll("원", "").replaceAll(",", "")
@@ -90,6 +91,7 @@ window.addEventListener("load", async () => {
 });
 
 // 장바구니 모양 누르면 팝업창
+
 let target = document.querySelectorAll(".img-button");
 let btnPopClose = document.querySelectorAll(".addbtn .cancel, .addbtn .purple");
 let targetID;
@@ -98,7 +100,7 @@ let targetID;
 for (let i = 0; i < target.length; i++) {
   target[i].addEventListener("click", function () {
     targetID = this.getAttribute("href");
-    getNode(targetID).style.display = "block";
+    document.querySelector(targetID).style.display = "block";
   });
 }
 

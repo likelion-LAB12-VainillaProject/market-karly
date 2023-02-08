@@ -229,25 +229,9 @@ a {
   font-weight: 700;
   font-size: 28.43px;
   color: #333333;
-  /* line-height: 140%; */
 }
-
-/* .first {
-  float: left;
-  background-color: red;
-  width: 3150px;
-  transform: translateX(-1050px);
-  transition: all 1s;
-}
-
-.first .innerone {
-  display: flex;
-  justify-content: space-between;
-  width: 1050px;
-} */
 
 .noodle {
-  /*width:249px;*/
   height: 320px;
   position: relative;
   overflow: hidden;
