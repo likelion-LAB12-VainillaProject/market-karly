@@ -22,33 +22,6 @@ const mainSwiper2 = new Swiper(".swiper2", {
   },
 });
 
-// const mainSwiper = new Swiper('.swiper2', {
-//     slidesPerView: 4,
-//     slidesPerGroup: 4,
-//     spaceBetween: 10,
-//     speed: 400,
-//     navigation: {
-//         nextEl: '.products > .swiper-button-next',
-//         prevEl: '.products > .swiper-button-prev',
-//     },
-// });
-
-// window.addEventListener('load', async () => {
-//   const mainSwiper = new Swiper('.swiper1', {
-//       slidesPerView: 4,
-//       slidesPerGroup: 4,
-//       spaceBetween: 10,
-//       speed: 400,
-//       navigation: {
-//           nextEl: '.nextBtn',
-//           prevEl: '.swiper-button-prev',
-//       },
-//   });
-
-//   document.getElementById('nextbtn').addEventListener('click', () => {
-//   mainSwiper.slideNext();
-//   })
-
 // 수량 및 가격변경 기능구현
 
 const quantityNumber = document.querySelector(".quantity-number");
