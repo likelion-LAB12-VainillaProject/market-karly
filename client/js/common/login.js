@@ -1,5 +1,5 @@
 import { getNode, getRandom } from "../../lib/index.js";
-
+import { handlerSignIn } from '../sign/sign.js';
 // - 회원가입을 통해 사용자(user)를 생성하고 관리합니다.
 //     - 랜덤 한 문자값 (10자 이상) 을 생성 후 사용자의 Unique ID 값으로 넣어주세요.
 //     - 해당 유저의 Unique ID를 확인 후 로그인합니다.
@@ -8,11 +8,18 @@ import { getNode, getRandom } from "../../lib/index.js";
 //     - 어떤 경우든 Unique ID가 유효하지 않다면 사용자에게 알리고 로그인 페이지로 리디렉션 시켜주세요
 //     - 로그아웃은 클라이언트 단에서 `localStorage`에 저장된 Unique ID를 삭제하는 방식으로 구현합니다.
 
-const registerButton = getNode(".register--button");
-const loginButton = getNode(".login--button");
-const userInput = getNode(".login--input");
+const loginButton = getNode('.login--button');
+loginButton.addEventListener('click', handlerSignIn);
+
+
+
+
+// 혜빈님 코드
+// const registerButton = getNode(".register--button");
+// const userInput = getNode(".login--input");
 
 //* storage function ----------------------------------------------------------
+/* 
 const {
   localStorage: storage,
   JSON: { stringify: serialize, parse: deserialize },
@@ -37,8 +44,9 @@ const clearStorage = (key) => {
     storage.removeItem(key);
   }
 };
-
+ */
 //* EventListener ----------------------------------------------------------
+/* 
 loginButton.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -73,3 +81,6 @@ loginButton.addEventListener("click", (e) => {
       });
     });
 });
+ */
+
+
