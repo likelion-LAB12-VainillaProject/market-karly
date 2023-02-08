@@ -117,7 +117,7 @@ input:focus {
 [type="radio"] {
   vertical-align: middle;
   appearance: none;
-  border: max(2px, 0.1em) solid gray;
+  border: max(2px, 0.1em) solid var(--gray-500);
   border-radius: 50%;
   width: var(--spacing-lg);
   height: var(--spacing-lg);
@@ -182,7 +182,7 @@ input[type="radio"]:checked::before {
 .birth__dash::after {
   content: "/";
   font-size: 14px;
-  color: rgb(204, 204, 204);
+  color: var(--gray-200);
   text-align: center;
   line-height: 40px;
 }
@@ -200,7 +200,7 @@ input[type="radio"]:checked::before {
 
 .border-bottom {
   padding: 10px 0px;
-  border-bottom: 1px solid rgb(51, 51, 51);
+  border-bottom: 1px solid var(--gray-600);
 }
 
 /* 이용약관 동의 */
@@ -209,7 +209,7 @@ input[type="radio"]:checked::before {
 }
 
 .agreement-condition > a {
-  color: rgb(95, 0, 128);
+  color: var(--primary);
   outline-offset: 5px;
 }
 
@@ -241,7 +241,7 @@ input[type="radio"]:checked::before {
 .agreement-all {
   align-items: flex-start;
   flex-direction: column;
-  padding-top: 12px;
+  padding-top: var(--spacing-sm);
 }
 
 .agreement-all > label {
@@ -251,9 +251,9 @@ input[type="radio"]:checked::before {
 }
 
 .agreement-all > p {
-  font-size: 12px;
+  font-size: var(--spacing-sm);
   color: var(--content);
-  padding-left: 2rem;
+  padding-left: var(--spacing-xl);
 }
 
 .agreement-control {
@@ -307,7 +307,7 @@ input[type="checkbox"]:checked::before {
   background-color: var(--primary);
 }
 
-/* 에러 메세지*/
+/* 에러 메세지 */
 .display-error {
   display: flex;
   flex-flow: column;
@@ -328,5 +328,4 @@ input[type="checkbox"]:checked::before {
 /* 푸터 */
 .footer {
   height: 629px;
-  background: beige;
 }

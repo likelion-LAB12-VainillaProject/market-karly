@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url(../base/reset.css);
 @import url(../base/nomalize.css);
 @import url(../base/base.css);
@@ -9,6 +10,8 @@
   margin: 0 auto;
 }
 
+=======
+>>>>>>> cc5ffa12a3fd10a828a16d4a0cd9ce1423365039
 .main {
   width: 1050px;
   margin-top: 50px;
@@ -18,6 +21,7 @@
 
 /* 로그인 */
 
+<<<<<<< HEAD
 .login--title {
   margin-top: 80px;
   margin-bottom: 44px;
@@ -80,6 +84,90 @@ li::after {
   float: right;
   color: rgb(102, 102, 102);
   margin-right: -7px;
+=======
+.login-main {
+  min-width: 1050px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px;
+  gap: 30px;
+}
+
+.login__section {
+  height: 350px;
+  width: 340px;
+  letter-spacing: -0.6px;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  height: 291px;
+}
+
+.login--title {
+  margin-top: 80px;
+  margin-bottom: 44px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: var(--black);
+}
+
+.input__box {
+  display: flex;
+  flex-flow: column;
+}
+
+#login-form fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 12px;
+  height: 140px;
+}
+
+.login--input {
+  width: 340px;
+  height: 50px;
+  padding: 0px 20px;
+  border: 1px solid var(--gray-200);
+  border-radius: 3px;
+  font-size: var(--text-sm);
+}
+
+.login--search {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.login--search li {
+  margin-bottom: 10px;
+}
+
+.login--search a {
+  padding: 10px;
+}
+
+.id--check::after {
+  content: "|";
+  float: right;
+  color: var(--gray-200);
+  margin-right: -2px;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+>>>>>>> cc5ffa12a3fd10a828a16d4a0cd9ce1423365039
 }
 
 .login--button {
@@ -87,8 +175,11 @@ li::after {
   height: 54px;
   display: block;
   font-size: var(--text-base);
+<<<<<<< HEAD
   margin-top: 28px;
   margin-bottom: 12px;
+=======
+>>>>>>> cc5ffa12a3fd10a828a16d4a0cd9ce1423365039
   margin-left: auto;
   margin-right: auto;
   color: var(--white);

@@ -10,13 +10,21 @@
   background-color: var(--white);
   position: sticky;
   top: 0;
+<<<<<<< HEAD
   box-shadow: rgb(0 0 0 / 7%) 0px 3px 4px 0px;
+=======
+  box-shadow: rgb(0 0 0 / 7%) 2px 2px;
+>>>>>>> cc5ffa12a3fd10a828a16d4a0cd9ce1423365039
   width: 100%;
   z-index: 10;
 }
 
 .nav-box {
+<<<<<<< HEAD
   height: 72px;
+=======
+  height: 54px;
+>>>>>>> cc5ffa12a3fd10a828a16d4a0cd9ce1423365039
   min-width: 1050px;
   width: 50%;
   flex-direction: row;
@@ -54,7 +62,11 @@
   background: var(--white);
   font-size: var(--text-xs);
   border: 1px solid var(--gray-100);
+<<<<<<< HEAD
   margin-top: -1px;
+=======
+  margin-top: -9.2px;
+>>>>>>> cc5ffa12a3fd10a828a16d4a0cd9ce1423365039
 }
 
 .nav-sub-menu a {
@@ -78,10 +90,15 @@
 .nav-menu__item {
   text-align: center;
 }
+
 .menu__link {
   color: var(--content);
   cursor: pointer;
   font-weight: 500;
+<<<<<<< HEAD
+=======
+  font-size: var(--text-base);
+>>>>>>> cc5ffa12a3fd10a828a16d4a0cd9ce1423365039
 }
 .menu__link:hover {
   color: var(--primary);
@@ -373,6 +390,19 @@ input.img-button {
 /* 장바구니 팝업창 */
 
 .pop_wrap {
+<<<<<<< HEAD
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    z-index:10;
+
+=======
   position: fixed;
   top: 0;
   left: 0;
@@ -383,6 +413,10 @@ input.img-button {
   margin: 0;
   padding: 0;
   z-index: 10;
+<<<<<<< HEAD
+=======
+>>>>>>> 43834f12c3079b7f0b5ec872bdd8d1566dd76ff3
+>>>>>>> cc5ffa12a3fd10a828a16d4a0cd9ce1423365039
 }
 
 .pop_wrap::after {

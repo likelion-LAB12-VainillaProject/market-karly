@@ -80,5 +80,42 @@
       },
       "stock": 13
     }
+  ],
+  "users": [
+    {
+      "uniqId": "asdfrWge",
+      "userId": "calko9611",
+      "userPw": "calko1111",
+      "userName": "김대웅",
+      "userTel": "01022223333"
+    },
+    {
+      "uniqId": "dfs1asdas",
+      "userId": "kyuran678",
+      "userPw": "kyuran2222",
+      "userName": "김진희",
+      "userTel": "010222453333"
+    },
+    {
+      "uniqId": "sdkjfwiW",
+      "userId": "hyebeen2658",
+      "userPw": "hyebeen3333",
+      "userName": "변혜빈",
+      "userTel": "01021233333"
+    },
+    {
+      "uniqId": "sdkfgwiW",
+      "userId": "copicat123",
+      "userPw": "copicat444",
+      "userName": "이원준",
+      "userTel": "01021233323"
+    },
+    {
+      "uniqId": "sdkdswiW",
+      "userId": "bellaru2022",
+      "userPw": "bellaru5555",
+      "userName": "정보화",
+      "userTel": "01021236733"
+    }
   ]
 }

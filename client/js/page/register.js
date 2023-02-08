@@ -78,6 +78,8 @@ const nameText = getNode(".name");
 const emailText = getNode(".email");
 const telText = getNode(".tel");
 
+let idCheckButton = getNode(".id-check");
+
 // * Event Listener --------------------------------------------------------
 form.addEventListener("input", (e) => {
   e.preventDefault();

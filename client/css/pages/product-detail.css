@@ -37,7 +37,11 @@
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .prodcut-img {
+=======
+.product-img {
+>>>>>>> cc5ffa12a3fd10a828a16d4a0cd9ce1423365039
   width: 400px;
   height: 514px;
 }
@@ -108,7 +112,11 @@
 
 .product-title-description {
   font-weight: 400;
+<<<<<<< HEAD
   font-size: 16px;
+=======
+  font-size: var(--text-base);
+>>>>>>> cc5ffa12a3fd10a828a16d4a0cd9ce1423365039
   line-height: 160%;
   color: var(--gray-400);
   order: 1;
@@ -121,13 +129,17 @@
   justify-content: flex-end;
   align-items: center;
   padding: 0px;
-  gap: 4px;
+  gap: var(--spacing-xs);
   width: 98px;
   height: 43px;
   flex: none;
   order: 2;
   font-weight: 700;
+<<<<<<< HEAD
   font-size: 16px;
+=======
+  font-size: var(--text-base);
+>>>>>>> cc5ffa12a3fd10a828a16d4a0cd9ce1423365039
   line-height: 140%;
 }
 
@@ -137,14 +149,18 @@
   font-weight: 600;
   font-size: 28.43px;
   line-height: 150%;
-  color: #333333;
+  color: var(--content);
   flex: none;
 }
 
 .product-heading__login {
   height: 24px;
   font-weight: 600;
+<<<<<<< HEAD
   font-size: 16px;
+=======
+  font-size: var(--text-base);
+>>>>>>> cc5ffa12a3fd10a828a16d4a0cd9ce1423365039
   line-height: 150%;
   color: var(--primary);
   flex: none;
@@ -170,9 +186,9 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 16px 0px;
+  padding: var(--spacing-base) 0px;
   font-weight: 600;
-  font-size: 12.003px;
+  font-size: var(--text-sm);
   line-height: 150%;
   color: var(--gray-400);
   width: 560px;
@@ -204,10 +220,13 @@
   color: var(--gray-500);
 }
 
+<<<<<<< HEAD
 /* .more__info__contents{
 
 } */
 
+=======
+>>>>>>> cc5ffa12a3fd10a828a16d4a0cd9ce1423365039
 .multi {
   top: 1px;
 }
