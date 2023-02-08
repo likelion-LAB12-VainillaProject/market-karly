@@ -6,7 +6,6 @@
 }
 
 /* 로그인 */
-
 .login-main {
   min-width: 1050px;
   display: flex;
@@ -96,6 +95,7 @@
   height: 54px;
   display: block;
   font-size: var(--text-base);
+
   margin-left: auto;
   margin-right: auto;
   color: var(--white);

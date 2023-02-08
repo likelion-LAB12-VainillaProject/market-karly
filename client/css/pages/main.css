@@ -1,8 +1,4 @@
 /* 공통 */
-.common {
-  width: 1050px;
-  margin: 0 auto;
-}
 
 /* 네비게이션 */
 .navigation {
@@ -10,15 +6,15 @@
   background-color: var(--white);
   position: sticky;
   top: 0;
-  box-shadow: rgb(0 0 0 / 7%) 2px 2px;
+  border-bottom: var(--gray-400);
   width: 100%;
   z-index: 10;
 }
 
 .nav-box {
   height: 54px;
-  min-width: 1050px;
-  width: 50%;
+  max-width: 1050px;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -54,6 +50,7 @@
   background: var(--white);
   font-size: var(--text-xs);
   border: 1px solid var(--gray-100);
+
   margin-top: -9.2px;
 }
 
@@ -83,6 +80,7 @@
   color: var(--content);
   cursor: pointer;
   font-weight: 500;
+
   font-size: var(--text-base);
 }
 .menu__link:hover {
@@ -375,19 +373,6 @@ input.img-button {
 /* 장바구니 팝업창 */
 
 .pop_wrap {
-<<<<<<< HEAD
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    z-index:10;
-
-=======
   position: fixed;
   top: 0;
   left: 0;
@@ -398,7 +383,6 @@ input.img-button {
   margin: 0;
   padding: 0;
   z-index: 10;
->>>>>>> 43834f12c3079b7f0b5ec872bdd8d1566dd76ff3
 }
 
 .pop_wrap::after {
@@ -418,18 +402,12 @@ input.img-button {
   font-style: normal;
   display: flex;
   flex-direction: column;
-
   padding: 24px 20px;
-  /* gap: 28px; */
-
   position: relative;
   width: 396px;
   height: 292px;
 
-  /* white */
-
   background: #ffffff;
-  /* Below/Medium */
   z-index: 20;
   box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.2);
   border-radius: 16px;

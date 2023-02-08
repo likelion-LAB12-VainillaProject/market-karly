@@ -82,6 +82,8 @@ let idCheckButton = getNode(".id-check");
 
 // * Event Listener --------------------------------------------------------
 form.addEventListener("input", (e) => {
+  e.preventDefault();
+
   if (e.target.classList.contains("user-id")) {
     if (!isValidId(e.target.value)) {
       errorText.textContent =
