@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/ProductList/list_accordion.js" defer></script>
-    <script src="./js/ProductList/list.js" defer></script>
+    <script src="./js/ProductList/list.js" type="module"></script>
     <script src="./js/main/dropDown.js" type="module"></script>
 
     <title>Document</title>
@@ -27,8 +27,6 @@
       </div>
     </div>
     <!-- Top banner End -->
-
-    <!-- header Start -->
     <header class="header">
       <div class="header--main">
         <h1 class="a11yHidden">마켓컬리</h1>
@@ -40,8 +38,8 @@
               class="header--main-logo"
             />
           </a>
-          <a href="/" class="is-active">마켓칼리</a>
-          <a href="/">뷰티칼리</a>
+          <a href="#" class="is-active">마켓칼리</a>
+          <a href="#">뷰티칼리</a>
           <img
             src="./assets/headericons/new.svg"
             alt="new 아이콘"
@@ -62,25 +60,23 @@
             />
           </div>
           <div class="header--main-icons">
-            <a href="/"
+            <a href="#"
               ><img src="./assets/headericons/location.svg" alt="지역 로고"
             /></a>
 
-            <a href="/"
+            <a href="#"
               ><img src="./assets/headericons/heart.svg" alt="찜하기"
             /></a>
 
-            <a href="./product_list.html"
+            <a href="./cart.html"
               ><img src="./assets/headericons/cart.svg" alt="장바구니"
             /></a>
           </div>
         </div>
 
         <ul class="header--member">
-          <li class="register"><a href="./register.html" class="is-active">회원가입</a></li>
-          <li class="signIn">
-            <a href="./login.html">로그인</a>
-          </li>
+          <li><a href="/" class="is-active">회원가입</a></li>
+          <li><a href="./login.html">로그인</a></li>
           <li>
             <a href="/"
               >고객센터
@@ -90,10 +86,9 @@
         </ul>
       </div>
     </header>
-    <!-- header End -->
 
     <!-- navigation Start -->
-    <nav class="navigation">
+    <nav class="navigation common">
       <div class="nav-box">
         <h2 class="a11yHidden">메인 메뉴</h2>
         <ul class="nav-menu__list">
@@ -295,7 +290,7 @@
           <a href="#" class="menu__link">신상품</a>
         </li>
         <li class="nav-menu__item">
-          <a href="#" class="menu__link">베스트</a>
+          <a href="./product_list.html" class="menu__link">베스트</a>
         </li>
         <li class="nav-menu__item">
           <a href="#" class="menu__link">알뜰쇼핑</a>
