@@ -1,4 +1,3 @@
-/* 푸터 Start */
 .footer.common {
   box-sizing: border-box;
   display: flex;
@@ -195,8 +194,8 @@
   color: var(--content);
 }
 
-.company-infomation::before {
-  content: url("/client/assets/icons/footer-icon/bar.svg");
+.company-information::before {
+  content: url("../../assets/icons/footer-icon/bar.svg");
   padding-right: 4px;
   vertical-align: top;
 }
