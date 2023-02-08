@@ -10,6 +10,28 @@
 
 2023.1.27 ~ 2023.2.9
 
+### 메인 페이지 필수 기능 구현
+
+- [**swiper.js**](https://swiperjs.com/)를 사용해주세요.
+  - 각 슬라이드를 데이터로 받아 동적으로 렌더링 되도록 만들어주세요.
+  - 슬라이드의 `prev`, `next` 버튼도 구현해주세요.
+  - 키보드 키로도 작동되도록 구현해주세요.
+- [localStorage](https://developer.mozilla.org/ko/docs/Web/API/Window/localStorage)를 사용하여 “시청 중인 컨텐츠 / 최근 본 항목”의 UI를 구성해주세요.
+- “마이크로 애니메이션”이 필요하다면 추가해주세요.
+- “회원가입 기능”을 구현해주세요.
+  - 최소한 이메일, 비밀번호 입력 필드(`input`), 제출 버튼(`button`)을 가지도록 구성해주세요.
+- 이메일과 비밀번호의 유효성을 확인합니다.
+  - 이메일 조건 : 최소 `@`, `.` 포함
+  - 비밀번호 조건 : 8자 이상 입력
+  - 이메일과 비밀번호가 모두 입력되어 있고, 조건을 만족해야 제출 버튼이 활성화 되도록 구현해주세요.
+- 회원가입을 통해 사용자(user)를 생성하고 관리합니다.
+  - 랜덤 한 문자값 (10자 이상) 을 생성 후 사용자의 Unique ID 값으로 넣어주세요.
+  - 해당 유저의 Unique ID를 확인 후 로그인합니다.
+  - 응답받은 Unique ID는 `localStorage`에 저장해주세요
+  - 다음 번에 로그인 시 Unique ID가 존재한다면 루트 경로로 리디렉션 시켜주세요
+  - 어떤 경우든 Unique ID가 유효하지 않다면 사용자에게 알리고 로그인 페이지로 리디렉션 시켜주세요
+  - 로그아웃은 클라이언트 단에서 `localStorage`에 저장된 Unique ID를 삭제하는 방식으로 구현합니다.
+
 <h3> ⚒️ Tech Stack  </h3>
 <p>
  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a> &nbsp 
