@@ -1,3 +1,5 @@
+import { getNode } from "../../lib/index.js";
+
 // 아코디언 열고 닫히는 기능
 function collapse(element) {
   let before = document.getElementsByClassName("active")[0]; // 기존에 활성화된 버튼
@@ -18,5 +20,5 @@ function collapse(element) {
 }
 
 function toggleImg() {
-  document.getElementById("img").src = "./assets/mainImg/checked.svg";
+  getNode("#img").src = "./assets/mainImg/checked.svg";
 }
