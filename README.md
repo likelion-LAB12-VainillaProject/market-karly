@@ -1,4 +1,4 @@
-# Vanilla Project - market-karly
+# Vanilla Project - market-karly 
 
 ## 프로젝트 구성원
 
