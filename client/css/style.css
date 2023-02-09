@@ -13,6 +13,7 @@
 @import url(./pages/main.css);
 @import url(./pages/cart.css);
 @import url(./pages/register.css);
+/* 문제 발생하여 주석 처리 */
 /* @import url(./pages/login.css); */
 @import url(./pages/product-list.css);
 @import url(./pages/product-detail.css);
